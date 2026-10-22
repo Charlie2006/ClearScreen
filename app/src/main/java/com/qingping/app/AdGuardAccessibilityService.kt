@@ -4,9 +4,16 @@ import android.accessibilityservice.AccessibilityService
 import android.view.accessibility.AccessibilityEvent
 import android.view.accessibility.AccessibilityNodeInfo
 import android.os.SystemClock
+import android.content.Intent
 import java.util.Locale
 
 class AdGuardAccessibilityService : AccessibilityService() {
+
+    companion object {
+        @Volatile
+        var isConnected: Boolean = false
+            private set
+    }
 
     private var lastActionPackage: String? = null
     private var lastActionAt: Long = 0L
@@ -23,13 +30,23 @@ class AdGuardAccessibilityService : AccessibilityService() {
 
     override fun onServiceConnected() {
         super.onServiceConnected()
+        isConnected = true
     }
 
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {
         if (event == null) return
 
         val pkg = event.packageName?.toString() ?: return
-        if (pkg == packageName) return
+        // Never click controls or navigate back while the user grants permissions.
+        if (pkg == packageName || pkg == "com.android.settings" ||
+            pkg == "com.android.systemui" || pkg == "com.huawei.systemmanager" ||
+            pkg == "com.android.permissioncontroller" ||
+            pkg == "com.google.android.permissioncontroller") {
+            foregroundPackage = null
+            lastClickedPackage = null
+            lastClickAt = 0L
+            return
+        }
 
         val now = SystemClock.elapsedRealtime()
 
@@ -79,6 +96,8 @@ class AdGuardAccessibilityService : AccessibilityService() {
                 if (lastActionPackage == pkg && now - lastActionAt < 1800L) return
 
                 val root = rootInActiveWindow ?: return
+                // Ignore stale events after a switch to another app or Settings.
+                if (root.packageName?.toString() != pkg) return
                 try {
                     tryCloseClearlyMarkedAd(root, pkg, now)
                 } catch (_: Exception) {
@@ -187,6 +206,16 @@ class AdGuardAccessibilityService : AccessibilityService() {
             "opera", "brave", "sbrowser", "ucbrowser", "edge"
         )
         return hints.any { p.contains(it) }
+    }
+
+    override fun onUnbind(intent: Intent?): Boolean {
+        isConnected = false
+        return super.onUnbind(intent)
+    }
+
+    override fun onDestroy() {
+        isConnected = false
+        super.onDestroy()
     }
 
     override fun onInterrupt() {
