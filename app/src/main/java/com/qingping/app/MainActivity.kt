@@ -36,13 +36,13 @@ class MainActivity : Activity() {
         val scroll = ScrollView(this)
         scroll.setBackgroundColor(Color.rgb(247, 248, 251))
 
-        page = LinearLayout(this).apply {
+        page = LinearLayout(this@MainActivity).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(20), dp(24), dp(20), dp(28))
         }
         scroll.addView(
             page,
-            ScrollView.LayoutParams(
+            android.widget.FrameLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT
             )
@@ -69,7 +69,7 @@ class MainActivity : Activity() {
 
         addCard {
             addText("实验性功能", 18f, true, Color.rgb(26, 35, 52))
-            val autoBack = Switch(this).apply {
+            val autoBack = Switch(this@MainActivity).apply {
                 text = "疑似误触跳转后自动返回"
                 textSize = 15f
                 isChecked = StatsStore.autoBackEnabled(this@MainActivity)
@@ -100,11 +100,11 @@ class MainActivity : Activity() {
             } else {
                 stats.forEach { stat ->
                     addDivider(top = 12)
-                    val row = LinearLayout(this).apply {
+                    val row = LinearLayout(this@MainActivity).apply {
                         orientation = LinearLayout.HORIZONTAL
                         gravity = Gravity.CENTER_VERTICAL
                     }
-                    val left = LinearLayout(this).apply {
+                    val left = LinearLayout(this@MainActivity).apply {
                         orientation = LinearLayout.VERTICAL
                     }
                     left.addView(makeText(stat.label, 16f, true, Color.rgb(35, 43, 58)))
@@ -119,12 +119,12 @@ class MainActivity : Activity() {
                     (currentTarget ?: page).addView(row, matchWrap(top = 8))
                 }
                 addButton("清空统计") {
-                    AlertDialog.Builder(this)
+                    AlertDialog.Builder(this@MainActivity)
                         .setTitle("清空统计")
                         .setMessage("确定删除所有应用的拦截统计吗？此操作不可撤销。")
                         .setNegativeButton("取消", null)
                         .setPositiveButton("清空") { _, _ ->
-                            StatsStore.clearStats(this)
+                            StatsStore.clearStats(this@MainActivity)
                             render()
                         }
                         .show()
@@ -140,7 +140,7 @@ class MainActivity : Activity() {
     }
 
     private fun addCard(content: LinearLayout.() -> Unit) {
-        val card = LinearLayout(this).apply {
+        val card = LinearLayout(this@MainActivity).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(16), dp(16), dp(16), dp(16))
             setBackgroundColor(Color.WHITE)
