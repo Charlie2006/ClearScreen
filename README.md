@@ -21,6 +21,15 @@
 - `app/src/main/AndroidManifest.xml`：应用和服务声明。
 - `.github/workflows/build-apk.yml`：GitHub Actions 自动构建调试版 APK。
 
+## 直接下载 APK
+
+[下载清屏 v1.0 调试版 APK](https://github.com/Charlie2006/ClearScreen/raw/refs/heads/main/downloads/qingping-v1.0-debug.apk)
+
+这是已实际编译并通过签名校验的调试版，支持 Android 8.0 及以上。
+如打开了 GitHub 文件页面，请点击 **Download raw file** 下载。
+校验文件位于 [downloads/SHA256SUMS](downloads/SHA256SUMS)。
+尚未进行真机功能测试；安装后需手动启用系统无障碍服务。
+
 ## 如何获得 APK
 
 本仓库配置了 GitHub Actions：
