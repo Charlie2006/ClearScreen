@@ -111,6 +111,19 @@ class MainActivity : Activity() {
             )
         }
 
+        addCard {
+            addText("识别诊断", 18f, true, Color.rgb(26, 35, 52))
+            addText("支持右上角跳过、倒计时和开屏线索组合识别，不强制出现“广告”字样。可在日志中查看匹配、拒绝和点击结果。", 14f, false, Color.rgb(70, 79, 94), top = 8)
+            addButton("打开识别日志") { startActivity(Intent(this@MainActivity, RecognitionLogActivity::class.java)) }
+            val gesture = Switch(this@MainActivity).apply {
+                text = "允许手势兜底点击规则匹配的跳过按钮"
+                isChecked = RecognitionLog.gestureEnabled(this@MainActivity)
+                setOnCheckedChangeListener { _, checked -> RecognitionLog.setGestureEnabled(this@MainActivity, checked) }
+            }
+            (currentTarget ?: page).addView(gesture, matchWrap(top = 8))
+            addText("默认关闭。仅当规则匹配且普通点击失败时，点击已识别控件的中心；不会盲点固定坐标，也不会摇动或滑动广告。", 13f, false, Color.rgb(93, 103, 119), top = 6)
+        }
+
         val stats = StatsStore.getStats(this)
         val total = stats.sumOf { it.count }
 
@@ -121,7 +134,7 @@ class MainActivity : Activity() {
 
             if (stats.isEmpty()) {
                 addText(
-                    "暂无记录。启用服务后，遇到带有可识别广告文字和关闭按钮的页面时，清屏会尝试处理。",
+                    "暂无记录。启用服务后，遇到具有可访问跳过控件且符合识别规则的页面时，清屏会尝试处理。",
                     14f, false, Color.rgb(93, 103, 119), top = 14
                 )
             } else {

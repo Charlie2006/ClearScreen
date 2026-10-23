@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">清屏</string>
     <string name="accessibility_service_label">清屏广告辅助服务</string>
-    <string name="accessibility_service_description">在用户明确启用后，读取其他应用可访问的界面文字，尝试关闭明确标注的广告，并在本机记录成功操作次数。</string>
+    <string name="accessibility_service_description">在用户明确启用后，读取其他应用可访问的界面文字，结合跳过文字、位置和开屏线索尝试关闭广告，并在本机记录成功操作次数。</string>
 </resources>
