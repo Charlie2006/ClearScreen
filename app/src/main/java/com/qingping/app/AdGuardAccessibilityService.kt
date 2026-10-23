@@ -126,6 +126,7 @@ class AdGuardAccessibilityService : AccessibilityService() {
                 (labels.contains("同意") || labels.contains("接受"))) ||
                 listOf("欢迎使用", "新手引导", "跳过登录", "跳过注册", "权限申请").any { labels.contains(it) }
             val timerNodes = entries.filter { it.info.visible && !it.info.editable && timerLabel.matches(it.info.text.trim()) }
+            val startupSkip = RecognitionLog.startupSkipEnabled(this)
             var candidates = 0
             for (entry in entries) {
                 val n = entry.info
@@ -133,11 +134,11 @@ class AdGuardAccessibilityService : AccessibilityService() {
                         kotlin.math.abs(other.info.box.top - n.box.top) < screenBox.height * 0.05 &&
                         kotlin.math.abs(other.info.box.left - n.box.left) < screenBox.width * 0.2
                 }
-                val screen = AdRules.Screen(screenBox, now - foregroundAt, ad, motion, onboarding, nearbyTimer)
+                val screen = AdRules.Screen(screenBox, now - foregroundAt, ad, motion, onboarding, nearbyTimer, startupSkip)
                 val d = AdRules.decide(n, screen)
                 if (!d.candidate) continue
                 candidates++
-                val signals = "来源=$source；开屏=${screen.ageMs}ms；广告=$ad；摇动/滑动=$motion；倒计时邻近=$nearbyTimer；右上角=${AdRules.topRight(n, screenBox)}；节点=${entries.size}${if (snapshot.truncated) "(达到扫描上限)" else ""}"
+                val signals = "来源=$source；开屏直点=$startupSkip；开屏=${screen.ageMs}ms；广告=$ad；摇动/滑动=$motion；倒计时邻近=$nearbyTimer；右上角=${AdRules.topRight(n, screenBox)}；节点=${entries.size}${if (snapshot.truncated) "(达到扫描上限)" else ""}"
                 if (candidates <= 12) logCandidate(pkg, if (d.click) "匹配" else "拒绝", d.reason, n, signals)
                 if (!d.click) continue
                 if (clickNode(entry.node, pkg, screenBox)) {

@@ -97,4 +97,37 @@ class AdRulesTest {
         assertFalse(AdRules.decide(node("本软件可以关闭广告"), screen).click)
         assertFalse(AdRules.decide(node("广告"), screen.copy(ad = true)).candidate)
     }
+    @Test fun directStartupSkipWorksAtBottomWithoutAdEvidence() {
+        val bottom = node(box = AdRules.Box(100, 1800, 300, 1870))
+        assertFalse(AdRules.decide(bottom, screen).click)
+        val d = AdRules.decide(bottom, screen.copy(startupSkip = true))
+        assertTrue(d.click); assertTrue(d.reason.contains("开屏直点"))
+    }
+    @Test fun directModeDeliberatelyAllowsSkipOnboarding() {
+        assertTrue(AdRules.decide(node("跳过登录"), screen.copy(startupSkip = true, onboarding = true)).click)
+        assertFalse(AdRules.decide(node("跳过登录"), screen.copy(startupSkip = false, onboarding = true)).click)
+    }
+    @Test fun directModeExpiresAndConservativeRulesResume() {
+        val n = node(box = AdRules.Box(100, 1800, 300, 1870))
+        assertTrue(AdRules.decide(n, screen.copy(startupSkip = true, ageMs = 15000)).click)
+        assertFalse(AdRules.decide(n, screen.copy(startupSkip = true, ageMs = 15001)).click)
+        assertTrue(AdRules.decide(node("关闭广告"), screen.copy(startupSkip = true, ageMs = 15001)).click)
+    }
+    @Test fun directModeDoesNotBypassNodeSafetyChecks() {
+        val direct = screen.copy(startupSkip = true)
+        for (n in listOf(node(visible = false), node(enabled = false), node(editable = true),
+            node(box = screen.box), node(box = AdRules.Box(-5, 90, 100, 160))))
+            assertFalse(AdRules.decide(n, direct).click)
+    }
+    @Test fun directModeDoesNotTreatCloseOrBareIdAsSkipText() {
+        val direct = screen.copy(startupSkip = true)
+        assertFalse(AdRules.decide(node("关闭", box = AdRules.Box(100, 1800, 300, 1870)), direct).click)
+        assertFalse(AdRules.decide(node("", "com.demo:id/skip", AdRules.Box(100, 1800, 300, 1870)), direct).click)
+    }
+    @Test fun directModeHandlesDescriptionAndCountdownAwayFromCorner() {
+        val direct = screen.copy(startupSkip = true)
+        assertTrue(AdRules.decide(node("", box = AdRules.Box(100, 1800, 300, 1870), description = "跳过 5s"), direct).click)
+        assertTrue(AdRules.decide(node("Skip (5s)", box = AdRules.Box(100, 1800, 300, 1870)), direct).click)
+    }
+
 }

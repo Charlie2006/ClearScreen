@@ -20,6 +20,14 @@ object RecognitionLog {
         prefs(c).edit().putBoolean("enabled", value).apply()
         revision++
     }
+    fun startupSkipEnabled(c: Context) = prefs(c).getBoolean("startup_skip", false)
+    fun setStartupSkipEnabled(c: Context, value: Boolean) {
+        prefs(c).edit().putBoolean("startup_skip", value).apply()
+    }
+    fun onlyRelated(c: Context) = prefs(c).getBoolean("only_related", true)
+    fun setOnlyRelated(c: Context, value: Boolean) {
+        prefs(c).edit().putBoolean("only_related", value).apply()
+    }
     fun gestureEnabled(c: Context) = prefs(c).getBoolean("gesture", false)
     fun setGestureEnabled(c: Context, value: Boolean) {
         prefs(c).edit().putBoolean("gesture", value).apply()

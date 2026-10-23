@@ -23,7 +23,7 @@
 
 ## 直接下载 APK
 
-[下载清屏 v1.2 调试版 APK](https://github.com/Charlie2006/ClearScreen/raw/refs/heads/main/downloads/qingping-v1.2-debug.apk)
+[下载清屏 v1.3 调试版 APK](https://github.com/Charlie2006/ClearScreen/raw/refs/heads/main/downloads/qingping-v1.3-debug.apk)
 
 这是已实际编译并通过签名校验的调试版，支持 Android 8.0 及以上。
 如打开了 GitHub 文件页面，请点击 **Download raw file** 下载。
@@ -100,3 +100,11 @@ app/build/outputs/apk/debug/app-debug.apk
 本次参考了李跳跳社区规则和同类公开实现的思路，没有复制第三方代码，也没有经验证的李跳跳本体源码。资料链接、规则边界与隐私说明见 [识别设计](docs/recognition-design.md)。没有 OCR 或传感器拦截，不能保证跳过所有广告；尚未真机验证。
 
 规则测试：`gradle --no-daemon testDebugUnitTest`。APK 构建：`gradle --no-daemon assembleDebug`。原有 `QUERY_ALL_PACKAGES` 的 Lint 问题仍保留，不宣称 Lint 全部通过。
+
+## v1.3：可选开屏直点与聚焦日志
+
+- 主界面“识别诊断”新增 **开屏见到“跳过”就点击**，默认关闭，选择会保存。开启后，在进入/切换到应用的前 15 秒内，只要节点文字或无障碍描述含“跳过”（或标准英文 Skip/倒计时格式）就尝试点击，无须右上角位置和广告证据。该模式会绕过首次使用/登录引导的广告判断，可能跳过正常引导。系统保护页、不可见/禁用/输入节点、越界与过大容器仍不会点击；15 秒后恢复普通规则。
+- 日志新增 **仅显示识别相关记录**，默认开启，选择会保存。保留候选匹配、候选拒绝、点击失败、操作已接受、按钮仍在/消失及结果未确认；隐藏服务、应用切换、冷却、未发现候选等背景记录。关闭开关即可查看全部类型，记录本身不会因此删除或停写。
+- 搜索、分类筛选与“仅显示识别相关记录”一起生效，复制功能只复制当前筛选结果。
+
+覆盖安装 1.3 后，在主界面开启“开屏见到‘跳过’就点击”，再打开目标应用测试。原有手势兜底仍是独立开关，点击是否被 Android 接受可在日志中查看。

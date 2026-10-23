@@ -13,7 +13,8 @@ object AdRules {
     )
     data class Screen(
         val box: Box, val ageMs: Long, val ad: Boolean,
-        val motion: Boolean, val onboarding: Boolean, val nearbyTimer: Boolean = false
+        val motion: Boolean, val onboarding: Boolean, val nearbyTimer: Boolean = false,
+        val startupSkip: Boolean = false
     )
     data class Decision(val candidate: Boolean, val click: Boolean, val reason: String)
 
@@ -71,6 +72,8 @@ object AdRules {
             return no("候选区域过大，可能是整页容器")
         val corner = topRight(node, screen.box)
         val startup = screen.ageMs in 0..15000
+        if (screen.startupSkip && startup && labels.any { it.contains("跳过") || skip.matches(it) })
+            return Decision(true, true, "开屏直点模式：15 秒窗口内发现跳过文字，不限制右上角或广告线索")
         val timed = labels.any { timer.containsMatchIn(it) } || screen.nearbyTimer
         if (screen.onboarding && !explicitText && !(adId && strongAdToken.containsMatchIn(id)) && !screen.motion)
             return no("页面含登录/隐私/引导线索，缺少明确广告证据")

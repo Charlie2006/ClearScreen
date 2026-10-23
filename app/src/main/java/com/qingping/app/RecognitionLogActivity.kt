@@ -22,6 +22,7 @@ class RecognitionLogActivity : Activity() {
     private lateinit var summary: TextView
     private lateinit var query: EditText
     private lateinit var filter: Spinner
+    private var onlyRelated = true
     private var lastRevision = -1L
     private var lastConnected = false
     private var displayed = emptyList<RecognitionLog.Entry>()
@@ -44,6 +45,16 @@ class RecognitionLogActivity : Activity() {
             text = "记录识别诊断"
             isChecked = RecognitionLog.enabled(this@RecognitionLogActivity)
             setOnCheckedChangeListener { _, value -> RecognitionLog.setEnabled(this@RecognitionLogActivity, value); refresh(true) }
+        })
+        onlyRelated = RecognitionLog.onlyRelated(this)
+        page.addView(Switch(this).apply {
+            text = "仅显示识别相关记录"
+            isChecked = onlyRelated
+            setOnCheckedChangeListener { _, value ->
+                onlyRelated = value
+                RecognitionLog.setOnlyRelated(this@RecognitionLogActivity, value)
+                refresh(true)
+            }
         })
         query = EditText(this).apply {
             hint = "按应用名称、包名或原因筛选"
@@ -109,18 +120,12 @@ class RecognitionLogActivity : Activity() {
         val entries = RecognitionLog.entries(this)
         val q = query.text.toString().trim()
         displayed = entries.filter { e ->
-            val kindMatches = when (filter.selectedItemPosition) {
-                1 -> e.kind == "拒绝"
-                2 -> e.kind in setOf("点击失败", "读取失败", "无法读取", "结果未确认", "未发现候选", "按钮仍在")
-                3 -> e.kind in setOf("匹配", "操作已接受", "按钮仍在", "按钮已消失", "自动返回")
-                4 -> e.kind in setOf("应用识别", "服务", "窗口切换", "跳过页面", "冷却")
-                else -> true
-            }
+            val kindMatches = RecognitionLogFilter.matches(e.kind, onlyRelated, filter.selectedItemPosition)
             kindMatches && (q.isEmpty() || "${appLabel(e.pkg)} ${e.pkg} ${e.reason} ${e.text} ${e.id}".contains(q, true))
         }
-        summary.text = "${if (RecognitionLog.enabled(this)) "记录中" else "记录已暂停"} · 显示 ${displayed.size} / ${entries.size} 条 · ${if (AdGuardAccessibilityService.isConnected) "服务已连接" else "服务未连接"}"
+        summary.text = "${if (RecognitionLog.enabled(this)) "记录中" else "记录已暂停"} · ${if (onlyRelated) "仅识别相关" else "全部类型"} · 显示 ${displayed.size} / ${entries.size} 条 · ${if (AdGuardAccessibilityService.isConnected) "服务已连接" else "服务未连接"}"
         list.removeAllViews()
-        if (displayed.isEmpty()) list.addView(TextView(this).apply { text = "暂无匹配记录。确认服务已连接并开启记录，然后切到目标应用复现。" })
+        if (displayed.isEmpty()) list.addView(TextView(this).apply { text = "暂无匹配记录。可关闭“仅显示识别相关记录”查看服务和扫描状态，或切到目标应用复现。" })
         displayed.forEach { e ->
             list.addView(TextView(this).apply {
                 text = format(e)
