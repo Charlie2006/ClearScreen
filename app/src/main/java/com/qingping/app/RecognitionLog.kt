@@ -2,6 +2,9 @@ package com.qingping.app
 
 import android.content.Context
 import android.os.SystemClock
+import android.util.Log
+import java.util.concurrent.Executors
+import java.util.concurrent.TimeUnit
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -12,6 +15,10 @@ object RecognitionLog {
     private val rows = ArrayList<Entry>()
     private val dedup = LinkedHashMap<String, Long>()
     private var loaded = false
+    private val writer = Executors.newSingleThreadScheduledExecutor { task ->
+        Thread(task, "qingping-log-writer").apply { isDaemon = true }
+    }
+    private var writeScheduled = false
     var revision: Long = 0
         private set
     private fun prefs(c: Context) = c.getSharedPreferences("recognition_log", Context.MODE_PRIVATE)
@@ -60,13 +67,27 @@ object RecognitionLog {
         while (rows.size > LIMIT) rows.removeAt(0)
         persist(c)
     }
+    // Call under this object's monitor. Snapshot/serialization runs off the service main thread.
     private fun persist(c: Context) {
+        revision++
+        if (writeScheduled) return
+        writeScheduled = true
+        val context = c.applicationContext
+        writer.schedule({
+            val snapshot = synchronized(this) {
+                writeScheduled = false
+                rows.toList()
+            }
+            try { writeRows(context, snapshot) }
+            catch (e: RuntimeException) { Log.w("QingPingLog", "Failed to persist diagnostics", e) }
+        }, 500, TimeUnit.MILLISECONDS)
+    }
+    private fun writeRows(c: Context, snapshot: List<Entry>) {
         val a = JSONArray()
-        rows.forEach { e -> a.put(JSONObject().put("time", e.time).put("pkg", e.pkg)
+        snapshot.forEach { e -> a.put(JSONObject().put("time", e.time).put("pkg", e.pkg)
             .put("kind", e.kind).put("reason", e.reason).put("text", e.text)
             .put("id", e.id).put("bounds", e.bounds).put("signals", e.signals)) }
         prefs(c).edit().putString("rows", a.toString()).apply()
-        revision++
     }
     @Synchronized fun entries(c: Context): List<Entry> { load(c); return rows.asReversed().toList() }
     @Synchronized fun clear(c: Context) { load(c); rows.clear(); dedup.clear(); persist(c) }

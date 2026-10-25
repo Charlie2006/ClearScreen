@@ -62,6 +62,7 @@ object AdRules {
             labels.any { it.contains("跳过") || it.contains("skip") }
         if (!candidate) return Decision(false, false, "不是跳过/关闭候选")
         fun no(reason: String) = Decision(true, false, reason)
+        if (screen.ageMs !in 0 until SplashWindow.DURATION_MS) return no("超过开屏 10 秒窗口，不执行点击")
         if (node.editable) return no("输入控件，不点击")
         if (!node.visible) return no("候选不可见，不点击")
         if (!node.enabled) return no("候选被禁用，等待下一次检查")
@@ -71,9 +72,9 @@ object AdRules {
         if (node.box.width > screen.box.width * 0.5 || node.box.height > screen.box.height * 0.22)
             return no("候选区域过大，可能是整页容器")
         val corner = topRight(node, screen.box)
-        val startup = screen.ageMs in 0..15000
+        val startup = screen.ageMs in 0 until SplashWindow.DURATION_MS
         if (screen.startupSkip && startup && labels.any { it.contains("跳过") || skip.matches(it) })
-            return Decision(true, true, "开屏直点模式：15 秒窗口内发现跳过文字，不限制右上角或广告线索")
+            return Decision(true, true, "开屏直点模式：10 秒窗口内发现跳过文字，不限制右上角或广告线索")
         val timed = labels.any { timer.containsMatchIn(it) } || screen.nearbyTimer
         if (screen.onboarding && !explicitText && !(adId && strongAdToken.containsMatchIn(id)) && !screen.motion)
             return no("页面含登录/隐私/引导线索，缺少明确广告证据")
@@ -84,7 +85,7 @@ object AdRules {
                 screen.motion -> "摇一摇/扭一扭/滑动跳转提示"
                 screen.ad -> "广告提示"
                 timed -> "倒计时"
-                startup -> "应用切换后 15 秒开屏窗口"
+                startup -> "应用切换后 10 秒开屏窗口"
                 else -> return no("发现右上角跳过，但已超过开屏窗口且无倒计时/广告线索")
             }
             return Decision(true, true, "右上角跳过 + $evidence")

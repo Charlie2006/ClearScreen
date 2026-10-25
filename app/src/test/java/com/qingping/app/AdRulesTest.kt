@@ -15,7 +15,7 @@ class AdRulesTest {
     }
     @Test fun commonChineseAndEnglishCountdownVariants() {
         for (text in listOf("跳过 5s", "5秒｜跳过", "跳过（５秒）", "跳过 | 3", "3s 跳过", "Skip (5s)", "5 Skip")) {
-            assertTrue(text, AdRules.decide(node(text), screen.copy(ageMs = 20000)).click)
+            assertTrue(text, AdRules.decide(node(text), screen.copy(ageMs = 9000)).click)
         }
     }
     @Test fun ordinarySkipOutsideStartupIsRejectedWithReason() {
@@ -26,20 +26,20 @@ class AdRulesTest {
         val d = AdRules.decide(node(box = AdRules.Box(860, 1800, 1020, 1870)), screen)
         assertFalse(d.click); assertTrue(d.reason.contains("不在右上角"))
     }
-    @Test fun motionAdWithCornerSkipAfterDelayedLoad() {
-        assertTrue(AdRules.decide(node(), screen.copy(ageMs = 30000, motion = true)).click)
+    @Test fun motionAdWithCornerSkipWithinWindow() {
+        assertTrue(AdRules.decide(node(), screen.copy(ageMs = 9000, motion = true)).click)
     }
     @Test fun motionTextAloneNeverBecomesClickTarget() {
         assertFalse(AdRules.decide(node("摇一摇，了解详情"), screen.copy(motion = true)).candidate)
     }
-    @Test fun adjacentTimerSupportsLateAd() {
-        assertTrue(AdRules.decide(node(), screen.copy(ageMs = 20000, nearbyTimer = true)).click)
+    @Test fun adjacentTimerSupportsDelayedSplash() {
+        assertTrue(AdRules.decide(node(), screen.copy(ageMs = 9000, nearbyTimer = true)).click)
     }
     @Test fun descriptionOnlySkipIsSupported() {
         assertTrue(AdRules.decide(node(text = "", description = "跳过 3秒"), screen).click)
     }
     @Test fun explicitAdDismissalIsSupportedAwayFromCorner() {
-        assertTrue(AdRules.decide(node("关闭广告", box = AdRules.Box(500, 1400, 600, 1480)), screen.copy(ageMs = 50000)).click)
+        assertTrue(AdRules.decide(node("关闭广告", box = AdRules.Box(500, 1400, 600, 1480)), screen.copy(ageMs = 9000)).click)
     }
     @Test fun sdkIdsAllowTextlessButtons() {
         for (id in listOf("com.demo:id/tt_splash_skip_btn", "com.demo:id/ksad_splash_skip_view", "com.demo:id/ad_close", "com.demo:id/splashSkipView"))
@@ -107,11 +107,11 @@ class AdRulesTest {
         assertTrue(AdRules.decide(node("跳过登录"), screen.copy(startupSkip = true, onboarding = true)).click)
         assertFalse(AdRules.decide(node("跳过登录"), screen.copy(startupSkip = false, onboarding = true)).click)
     }
-    @Test fun directModeExpiresAndConservativeRulesResume() {
+    @Test fun allModesStopAtTenSeconds() {
         val n = node(box = AdRules.Box(100, 1800, 300, 1870))
-        assertTrue(AdRules.decide(n, screen.copy(startupSkip = true, ageMs = 15000)).click)
-        assertFalse(AdRules.decide(n, screen.copy(startupSkip = true, ageMs = 15001)).click)
-        assertTrue(AdRules.decide(node("关闭广告"), screen.copy(startupSkip = true, ageMs = 15001)).click)
+        assertTrue(AdRules.decide(n, screen.copy(startupSkip = true, ageMs = 9999)).click)
+        assertFalse(AdRules.decide(n, screen.copy(startupSkip = true, ageMs = 10000)).click)
+        assertFalse(AdRules.decide(node("关闭广告"), screen.copy(startupSkip = true, ageMs = 10000)).click)
     }
     @Test fun directModeDoesNotBypassNodeSafetyChecks() {
         val direct = screen.copy(startupSkip = true)
@@ -130,4 +130,11 @@ class AdRulesTest {
         assertTrue(AdRules.decide(node("Skip (5s)", box = AdRules.Box(100, 1800, 300, 1870)), direct).click)
     }
 
+    @Test fun evenStrongAdEvidenceCannotClickAfterDeadline() {
+        for (age in listOf(-1L, 10000L, 30000L)) {
+            val expired = screen.copy(ageMs = age, ad = true, motion = true, startupSkip = true)
+            for (n in listOf(node(), node("关闭广告"), node("", "com.demo:id/ad_close")))
+                assertFalse("age=$age node=$n", AdRules.decide(n, expired).click)
+        }
+    }
 }
