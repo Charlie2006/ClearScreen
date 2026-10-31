@@ -1,0 +1,71 @@
+{
+  "source_solids": 197,
+  "water_solids": 1,
+  "water_valid": true,
+  "water_volume_mm3": 976733.70551161,
+  "water_volume_litres": 0.97673370551161,
+  "water_metal_interface_checks": [
+    {
+      "water_segment": 193,
+      "metal_segment": 192,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 194,
+      "metal_segment": 192,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 192,
+      "metal_segment": 193,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 192,
+      "metal_segment": 194,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 193,
+      "metal_segment": 195,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 195,
+      "metal_segment": 193,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 194,
+      "metal_segment": 195,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 195,
+      "metal_segment": 194,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 193,
+      "metal_segment": 196,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 196,
+      "metal_segment": 193,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 194,
+      "metal_segment": 196,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 196,
+      "metal_segment": 194,
+      "overlap_mm3": 0
+    }
+  ],
+  "geometry_changed": false,
+  "solidworks_tested": false
+}

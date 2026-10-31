@@ -1,0 +1,17 @@
+[
+  {
+    "file": "Water_Domain.step",
+    "solids": 1,
+    "volume_mm3": 976733.7019141782
+  },
+  {
+    "file": "Complete_With_Water_Flat.step",
+    "solids": 198,
+    "volume_mm3": 4891073.251726129
+  },
+  {
+    "file": "Complete_With_Water_Five_Groups.step",
+    "solids": 198,
+    "volume_mm3": 4891073.235983192
+  }
+]
