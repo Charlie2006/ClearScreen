@@ -1,0 +1,26 @@
+{
+  "file": "CoolingAssembly_Flat_Multibody_AP214.step",
+  "bytes": 18134348,
+  "solids": 193,
+  "expected_solids": 193,
+  "volume_mm3": 3907674.544092213,
+  "volume_difference_mm3": 1.383153721690178e-05,
+  "bbox_mm": [
+    -1040.139876654,
+    -350.47008749450004,
+    -182.50000000037392,
+    -539.8441418967691,
+    350.44420691170006,
+    182.50000000023
+  ],
+  "dimensions_mm": [
+    500.295734757231,
+    700.9142944062,
+    365.0000000006039
+  ],
+  "product_count": 1,
+  "assembly_occurrence_count": 0,
+  "schema": "FILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));",
+  "source_geometry_changed": false,
+  "solidworks_tested": false
+}
