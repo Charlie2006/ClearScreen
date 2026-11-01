@@ -1,0 +1,72 @@
+{
+  "source_solids": 197,
+  "water_solids": 1,
+  "water_valid": true,
+  "water_volume_mm3": 979931.0691916454,
+  "water_volume_litres": 0.9799310691916454,
+  "water_metal_interface_checks": [
+    {
+      "water_segment": 193,
+      "metal_segment": 192,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 194,
+      "metal_segment": 192,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 192,
+      "metal_segment": 193,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 192,
+      "metal_segment": 194,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 193,
+      "metal_segment": 195,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 195,
+      "metal_segment": 193,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 194,
+      "metal_segment": 195,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 195,
+      "metal_segment": 194,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 193,
+      "metal_segment": 196,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 196,
+      "metal_segment": 193,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 194,
+      "metal_segment": 196,
+      "overlap_mm3": 0
+    },
+    {
+      "water_segment": 196,
+      "metal_segment": 194,
+      "overlap_mm3": 0
+    }
+  ],
+  "original_geometry_changed": false,
+  "join_method": "internal overlap connector entirely inside existing bore; original pipe unchanged",
+  "solidworks_tested": false
+}
