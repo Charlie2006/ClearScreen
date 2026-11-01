@@ -1,0 +1,23 @@
+{
+  "input_file": "ThreePhase_Cooling_No_Wood_Flat.step",
+  "input_sha256": "85c497ceba638e27a2347debcda403327d52583a4d7da8d0f475ed7132e9ba17",
+  "solids": 402,
+  "search_threshold_um": 50,
+  "total_bbox_near_pairs": 927,
+  "reference_phase_pairs_screened": 308,
+  "other_phases_verified_translations_x_mm": [
+    790,
+    1580
+  ],
+  "max_sampled_copy_edge_deviation_mm": 5.002220875899804e-10,
+  "endpoint_joints_checked": 12,
+  "misregistered_adapter_joints": 6,
+  "reference_exact_volume_intersections_checked": 137,
+  "max_overlap_volume_mm3": 0,
+  "water_short_edges_below_50um_total": 27,
+  "water_narrow_faces_estimated_width_below_50um_total": 27,
+  "shortest_water_edge_um": 1.7702937907611016,
+  "min_water_face_width_estimate_um": 0.7852302709336673,
+  "geometry_modified": false,
+  "comsol_meshing_tested": false
+}
