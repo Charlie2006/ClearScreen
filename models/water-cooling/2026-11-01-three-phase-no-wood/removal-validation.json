@@ -1,0 +1,2621 @@
+{
+  "source_file": "\u6c34\u51b7\u88c5\u7f6e_\u4e09\u76f8.STEP",
+  "source_sha256": "e4f4a4ed6decb860e218fdb60e71ddb7c9cbc94d0f696a0e1f8edd2d04f60eca",
+  "source_solids": 594,
+  "removed_laminated_wood_solids": 192,
+  "export_solids": 402,
+  "removed_source_ids": [
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    542,
+    543,
+    544,
+    545,
+    546,
+    547,
+    548,
+    549,
+    550,
+    551,
+    552,
+    553,
+    554,
+    555,
+    556,
+    557,
+    558,
+    559,
+    560,
+    561,
+    562,
+    563,
+    564,
+    565,
+    566,
+    567,
+    568,
+    569,
+    570,
+    571,
+    572,
+    573,
+    574,
+    575,
+    576,
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586,
+    587
+  ],
+  "identification": "26-face I-shaped supports matching previous laminated wood geometry by volume and sorted face areas",
+  "retained_solids_modified": false,
+  "all_export_solids_valid": true,
+  "step_product_count": 1,
+  "assembly_occurrences": 0,
+  "retained_body_checks": [
+    {
+      "source_id": 0,
+      "export_id": 0,
+      "volume_difference_mm3": 1.9281287677586079e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 1,
+      "export_id": 1,
+      "volume_difference_mm3": 1.8917489796876907e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 2,
+      "export_id": 2,
+      "volume_difference_mm3": 2.6193447411060333e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 3,
+      "export_id": 3,
+      "volume_difference_mm3": 6.184563972055912e-11,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 4,
+      "export_id": 4,
+      "volume_difference_mm3": 3.092281986027956e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 5,
+      "export_id": 5,
+      "volume_difference_mm3": 1.2732925824820995e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 6,
+      "export_id": 6,
+      "volume_difference_mm3": 1.127773430198431e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 7,
+      "export_id": 7,
+      "volume_difference_mm3": 1.0913936421275139e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 8,
+      "export_id": 8,
+      "volume_difference_mm3": 2.0234438125044107e-08,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 9,
+      "export_id": 9,
+      "volume_difference_mm3": 2.0234438125044107e-08,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 10,
+      "export_id": 10,
+      "volume_difference_mm3": 1.051375875249505e-09,
+      "max_bbox_difference_mm": 1.8530954548623413e-10
+    },
+    {
+      "source_id": 11,
+      "export_id": 11,
+      "volume_difference_mm3": 1.0550138540565968e-09,
+      "max_bbox_difference_mm": 1.8530954548623413e-10
+    },
+    {
+      "source_id": 12,
+      "export_id": 12,
+      "volume_difference_mm3": 1.6389094525948167e-08,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 13,
+      "export_id": 13,
+      "volume_difference_mm3": 1.796797732822597e-08,
+      "max_bbox_difference_mm": 1.8530954548623413e-10
+    },
+    {
+      "source_id": 14,
+      "export_id": 14,
+      "volume_difference_mm3": 8.258211892098188e-10,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 15,
+      "export_id": 15,
+      "volume_difference_mm3": 4.220055416226387e-10,
+      "max_bbox_difference_mm": 1.857642928371206e-10
+    },
+    {
+      "source_id": 16,
+      "export_id": 16,
+      "volume_difference_mm3": 5.638867150992155e-10,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 17,
+      "export_id": 17,
+      "volume_difference_mm3": 6.984919309616089e-10,
+      "max_bbox_difference_mm": 1.8530954548623413e-10
+    },
+    {
+      "source_id": 18,
+      "export_id": 18,
+      "volume_difference_mm3": 4.2782630771398544e-09,
+      "max_bbox_difference_mm": 1.8530954548623413e-10
+    },
+    {
+      "source_id": 19,
+      "export_id": 19,
+      "volume_difference_mm3": 3.932655090466142e-09,
+      "max_bbox_difference_mm": 1.8530954548623413e-10
+    },
+    {
+      "source_id": 20,
+      "export_id": 20,
+      "volume_difference_mm3": 5.093170329928398e-11,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 21,
+      "export_id": 21,
+      "volume_difference_mm3": 1.3787939678877592e-09,
+      "max_bbox_difference_mm": 1.8542323232395574e-10
+    },
+    {
+      "source_id": 22,
+      "export_id": 22,
+      "volume_difference_mm3": 2.079468686133623e-08,
+      "max_bbox_difference_mm": 1.8542323232395574e-10
+    },
+    {
+      "source_id": 23,
+      "export_id": 23,
+      "volume_difference_mm3": 2.0849256543442607e-08,
+      "max_bbox_difference_mm": 1.8542323232395574e-10
+    },
+    {
+      "source_id": 24,
+      "export_id": 24,
+      "volume_difference_mm3": 1.382431946694851e-10,
+      "max_bbox_difference_mm": 8.560618880437687e-11
+    },
+    {
+      "source_id": 25,
+      "export_id": 25,
+      "volume_difference_mm3": 5.966285243630409e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 26,
+      "export_id": 26,
+      "volume_difference_mm3": 4.18367562815547e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 27,
+      "export_id": 27,
+      "volume_difference_mm3": 4.18367562815547e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 28,
+      "export_id": 28,
+      "volume_difference_mm3": 5.093170329928398e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 29,
+      "export_id": 29,
+      "volume_difference_mm3": 4.43833414465189e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 30,
+      "export_id": 30,
+      "volume_difference_mm3": 2.546585164964199e-11,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 31,
+      "export_id": 31,
+      "volume_difference_mm3": 1.0622898116707802e-09,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 32,
+      "export_id": 32,
+      "volume_difference_mm3": 2.9467628337442875e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 33,
+      "export_id": 33,
+      "volume_difference_mm3": 3.019522409886122e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 34,
+      "export_id": 34,
+      "volume_difference_mm3": 2.9103830456733704e-11,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 35,
+      "export_id": 35,
+      "volume_difference_mm3": 3.2741809263825417e-11,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 36,
+      "export_id": 36,
+      "volume_difference_mm3": 6.912159733474255e-11,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 37,
+      "export_id": 37,
+      "volume_difference_mm3": 6.912159733474255e-11,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 38,
+      "export_id": 38,
+      "volume_difference_mm3": 2.0736479200422764e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 39,
+      "export_id": 39,
+      "volume_difference_mm3": 2.0736479200422764e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 40,
+      "export_id": 40,
+      "volume_difference_mm3": 3.601599019020796e-10,
+      "max_bbox_difference_mm": 8.537881512893364e-11
+    },
+    {
+      "source_id": 41,
+      "export_id": 41,
+      "volume_difference_mm3": 3.710738383233547e-10,
+      "max_bbox_difference_mm": 8.537881512893364e-11
+    },
+    {
+      "source_id": 42,
+      "export_id": 42,
+      "volume_difference_mm3": 3.1650415621697903e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 43,
+      "export_id": 43,
+      "volume_difference_mm3": 1.5279510989785194e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 44,
+      "export_id": 44,
+      "volume_difference_mm3": 3.448803909122944e-09,
+      "max_bbox_difference_mm": 8.537881512893364e-11
+    },
+    {
+      "source_id": 45,
+      "export_id": 45,
+      "volume_difference_mm3": 3.321474650874734e-09,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 46,
+      "export_id": 46,
+      "volume_difference_mm3": 9.458744898438454e-10,
+      "max_bbox_difference_mm": 8.560618880437687e-11
+    },
+    {
+      "source_id": 47,
+      "export_id": 47,
+      "volume_difference_mm3": 5.347828846424818e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 48,
+      "export_id": 48,
+      "volume_difference_mm3": 2.3283064365386963e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 49,
+      "export_id": 49,
+      "volume_difference_mm3": 4.838511813431978e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 50,
+      "export_id": 50,
+      "volume_difference_mm3": 1.8408172763884068e-08,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 51,
+      "export_id": 51,
+      "volume_difference_mm3": 1.7804268281906843e-08,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 52,
+      "export_id": 52,
+      "volume_difference_mm3": 4.0745362639427185e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 53,
+      "export_id": 53,
+      "volume_difference_mm3": 3.346940502524376e-10,
+      "max_bbox_difference_mm": 8.560618880437687e-11
+    },
+    {
+      "source_id": 54,
+      "export_id": 54,
+      "volume_difference_mm3": 2.510205376893282e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 55,
+      "export_id": 55,
+      "volume_difference_mm3": 2.546585164964199e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 56,
+      "export_id": 56,
+      "volume_difference_mm3": 4.256435204297304e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 57,
+      "export_id": 57,
+      "volume_difference_mm3": 4.256435204297304e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 58,
+      "export_id": 58,
+      "volume_difference_mm3": 5.311449058353901e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 59,
+      "export_id": 59,
+      "volume_difference_mm3": 5.384208634495735e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 60,
+      "export_id": 60,
+      "volume_difference_mm3": 4.0381564758718014e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 61,
+      "export_id": 61,
+      "volume_difference_mm3": 4.0381564758718014e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 62,
+      "export_id": 62,
+      "volume_difference_mm3": 1.2732925824820995e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 63,
+      "export_id": 63,
+      "volume_difference_mm3": 1.2005330063402653e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 64,
+      "export_id": 64,
+      "volume_difference_mm3": 1.0550138540565968e-10,
+      "max_bbox_difference_mm": 8.560618880437687e-11
+    },
+    {
+      "source_id": 65,
+      "export_id": 65,
+      "volume_difference_mm3": 1.0186340659856796e-10,
+      "max_bbox_difference_mm": 8.560618880437687e-11
+    },
+    {
+      "source_id": 66,
+      "export_id": 66,
+      "volume_difference_mm3": 5.456968210637569e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 67,
+      "export_id": 67,
+      "volume_difference_mm3": 6.730260793119669e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 68,
+      "export_id": 68,
+      "volume_difference_mm3": 3.2741809263825417e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 69,
+      "export_id": 69,
+      "volume_difference_mm3": 3.2741809263825417e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 70,
+      "export_id": 70,
+      "volume_difference_mm3": 3.637978807091713e-11,
+      "max_bbox_difference_mm": 1.8542323232395574e-10
+    },
+    {
+      "source_id": 71,
+      "export_id": 71,
+      "volume_difference_mm3": 2.9103830456733704e-11,
+      "max_bbox_difference_mm": 1.8542323232395574e-10
+    },
+    {
+      "source_id": 72,
+      "export_id": 72,
+      "volume_difference_mm3": 1.356966095045209e-09,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 73,
+      "export_id": 73,
+      "volume_difference_mm3": 1.3533281162381172e-09,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 74,
+      "export_id": 74,
+      "volume_difference_mm3": 1.9146682461723685e-08,
+      "max_bbox_difference_mm": 1.8530954548623413e-10
+    },
+    {
+      "source_id": 75,
+      "export_id": 75,
+      "volume_difference_mm3": 1.8790160538628697e-08,
+      "max_bbox_difference_mm": 1.857642928371206e-10
+    },
+    {
+      "source_id": 76,
+      "export_id": 76,
+      "volume_difference_mm3": 3.2741809263825417e-10,
+      "max_bbox_difference_mm": 1.8530954548623413e-10
+    },
+    {
+      "source_id": 77,
+      "export_id": 77,
+      "volume_difference_mm3": 9.094947017729282e-11,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 78,
+      "export_id": 78,
+      "volume_difference_mm3": 2.4374458007514477e-10,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 79,
+      "export_id": 79,
+      "volume_difference_mm3": 1.393345883116126e-09,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 80,
+      "export_id": 80,
+      "volume_difference_mm3": 1.5752448234707117e-09,
+      "max_bbox_difference_mm": 1.8530954548623413e-10
+    },
+    {
+      "source_id": 81,
+      "export_id": 81,
+      "volume_difference_mm3": 1.6771082300692797e-09,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 82,
+      "export_id": 82,
+      "volume_difference_mm3": 9.713403414934874e-10,
+      "max_bbox_difference_mm": 1.8530954548623413e-10
+    },
+    {
+      "source_id": 83,
+      "export_id": 83,
+      "volume_difference_mm3": 4.256435204297304e-10,
+      "max_bbox_difference_mm": 1.8530954548623413e-10
+    },
+    {
+      "source_id": 84,
+      "export_id": 84,
+      "volume_difference_mm3": 6.439222488552332e-10,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 85,
+      "export_id": 85,
+      "volume_difference_mm3": 1.4224497135728598e-09,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 86,
+      "export_id": 86,
+      "volume_difference_mm3": 5.820766091346741e-11,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 87,
+      "export_id": 87,
+      "volume_difference_mm3": 5.748006515204906e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 88,
+      "export_id": 88,
+      "volume_difference_mm3": 4.911271389573812e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 89,
+      "export_id": 89,
+      "volume_difference_mm3": 4.874891601502895e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 90,
+      "export_id": 90,
+      "volume_difference_mm3": 7.421476766467094e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 91,
+      "export_id": 91,
+      "volume_difference_mm3": 6.548361852765083e-10,
+      "max_bbox_difference_mm": 8.560618880437687e-11
+    },
+    {
+      "source_id": 92,
+      "export_id": 92,
+      "volume_difference_mm3": 2.0372681319713593e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 93,
+      "export_id": 93,
+      "volume_difference_mm3": 8.476490620523691e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 94,
+      "export_id": 94,
+      "volume_difference_mm3": 3.637978807091713e-12,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 95,
+      "export_id": 95,
+      "volume_difference_mm3": 3.637978807091713e-12,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 96,
+      "export_id": 96,
+      "volume_difference_mm3": 9.822542779147625e-11,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 97,
+      "export_id": 97,
+      "volume_difference_mm3": 1.0550138540565968e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 98,
+      "export_id": 98,
+      "volume_difference_mm3": 4.2928149923682213e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 99,
+      "export_id": 99,
+      "volume_difference_mm3": 4.3655745685100555e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 100,
+      "export_id": 100,
+      "volume_difference_mm3": 5.093170329928398e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 101,
+      "export_id": 101,
+      "volume_difference_mm3": 5.093170329928398e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 102,
+      "export_id": 102,
+      "volume_difference_mm3": 5.638867150992155e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 103,
+      "export_id": 103,
+      "volume_difference_mm3": 5.602487362921238e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 104,
+      "export_id": 104,
+      "volume_difference_mm3": 5.820766091346741e-11,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 105,
+      "export_id": 105,
+      "volume_difference_mm3": 5.893525667488575e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 106,
+      "export_id": 106,
+      "volume_difference_mm3": 2.6702764444053173e-09,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 107,
+      "export_id": 107,
+      "volume_difference_mm3": 2.775777829810977e-09,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 108,
+      "export_id": 108,
+      "volume_difference_mm3": 2.4374458007514477e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 109,
+      "export_id": 109,
+      "volume_difference_mm3": 2.801243681460619e-10,
+      "max_bbox_difference_mm": 8.560618880437687e-11
+    },
+    {
+      "source_id": 110,
+      "export_id": 110,
+      "volume_difference_mm3": 1.2732925824820995e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 111,
+      "export_id": 111,
+      "volume_difference_mm3": 7.166818249970675e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 112,
+      "export_id": 112,
+      "volume_difference_mm3": 1.75605237018317e-08,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 113,
+      "export_id": 113,
+      "volume_difference_mm3": 1.822263584472239e-08,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 114,
+      "export_id": 114,
+      "volume_difference_mm3": 1.382431946694851e-10,
+      "max_bbox_difference_mm": 8.537881512893364e-11
+    },
+    {
+      "source_id": 115,
+      "export_id": 115,
+      "volume_difference_mm3": 3.019522409886122e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 116,
+      "export_id": 116,
+      "volume_difference_mm3": 6.039044819772243e-10,
+      "max_bbox_difference_mm": 8.560618880437687e-11
+    },
+    {
+      "source_id": 117,
+      "export_id": 117,
+      "volume_difference_mm3": 6.039044819772243e-10,
+      "max_bbox_difference_mm": 8.560618880437687e-11
+    },
+    {
+      "source_id": 118,
+      "export_id": 118,
+      "volume_difference_mm3": 3.128661774098873e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 119,
+      "export_id": 119,
+      "volume_difference_mm3": 3.1650415621697903e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 120,
+      "export_id": 120,
+      "volume_difference_mm3": 5.311449058353901e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 121,
+      "export_id": 121,
+      "volume_difference_mm3": 5.311449058353901e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 122,
+      "export_id": 122,
+      "volume_difference_mm3": 5.820766091346741e-11,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 123,
+      "export_id": 123,
+      "volume_difference_mm3": 5.820766091346741e-11,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 124,
+      "export_id": 124,
+      "volume_difference_mm3": 1.0913936421275139e-10,
+      "max_bbox_difference_mm": 8.560618880437687e-11
+    },
+    {
+      "source_id": 125,
+      "export_id": 125,
+      "volume_difference_mm3": 1.0186340659856796e-10,
+      "max_bbox_difference_mm": 8.560618880437687e-11
+    },
+    {
+      "source_id": 126,
+      "export_id": 126,
+      "volume_difference_mm3": 1.8189894035458565e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 127,
+      "export_id": 127,
+      "volume_difference_mm3": 1.8553691916167736e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 192,
+      "export_id": 128,
+      "volume_difference_mm3": 0.00020259787561371922,
+      "max_bbox_difference_mm": 1.8530954548623413e-10
+    },
+    {
+      "source_id": 193,
+      "export_id": 129,
+      "volume_difference_mm3": 4.547473508864641e-12,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 194,
+      "export_id": 130,
+      "volume_difference_mm3": 3.3651303965598345e-11,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 195,
+      "export_id": 131,
+      "volume_difference_mm3": 2.9006287149968557e-08,
+      "max_bbox_difference_mm": 8.560618880437687e-11
+    },
+    {
+      "source_id": 196,
+      "export_id": 132,
+      "volume_difference_mm3": 1.0282178664056119e-08,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 197,
+      "export_id": 133,
+      "volume_difference_mm3": 0.00040320667903870344,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 198,
+      "export_id": 134,
+      "volume_difference_mm3": 9.204086381942034e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 199,
+      "export_id": 135,
+      "volume_difference_mm3": 9.240466170012951e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 200,
+      "export_id": 136,
+      "volume_difference_mm3": 3.563400241546333e-08,
+      "max_bbox_difference_mm": 8.533618256478803e-11
+    },
+    {
+      "source_id": 201,
+      "export_id": 137,
+      "volume_difference_mm3": 3.582681529223919e-08,
+      "max_bbox_difference_mm": 8.533618256478803e-11
+    },
+    {
+      "source_id": 202,
+      "export_id": 138,
+      "volume_difference_mm3": 3.601599019020796e-10,
+      "max_bbox_difference_mm": 8.537881512893364e-11
+    },
+    {
+      "source_id": 203,
+      "export_id": 139,
+      "volume_difference_mm3": 1.5643308870494366e-10,
+      "max_bbox_difference_mm": 8.537881512893364e-11
+    },
+    {
+      "source_id": 204,
+      "export_id": 140,
+      "volume_difference_mm3": 3.2741809263825417e-11,
+      "max_bbox_difference_mm": 8.543565854779445e-11
+    },
+    {
+      "source_id": 205,
+      "export_id": 141,
+      "volume_difference_mm3": 3.2741809263825417e-11,
+      "max_bbox_difference_mm": 8.543565854779445e-11
+    },
+    {
+      "source_id": 206,
+      "export_id": 142,
+      "volume_difference_mm3": 1.6007106751203537e-10,
+      "max_bbox_difference_mm": 8.546408025722485e-11
+    },
+    {
+      "source_id": 207,
+      "export_id": 143,
+      "volume_difference_mm3": 1.6370904631912708e-10,
+      "max_bbox_difference_mm": 8.546408025722485e-11
+    },
+    {
+      "source_id": 208,
+      "export_id": 144,
+      "volume_difference_mm3": 1.0841176845133305e-09,
+      "max_bbox_difference_mm": 8.526512829121202e-11
+    },
+    {
+      "source_id": 209,
+      "export_id": 145,
+      "volume_difference_mm3": 1.0841176845133305e-09,
+      "max_bbox_difference_mm": 8.526512829121202e-11
+    },
+    {
+      "source_id": 210,
+      "export_id": 146,
+      "volume_difference_mm3": 1.6789272194728255e-08,
+      "max_bbox_difference_mm": 8.554934538551606e-11
+    },
+    {
+      "source_id": 211,
+      "export_id": 147,
+      "volume_difference_mm3": 1.8335413187742233e-08,
+      "max_bbox_difference_mm": 8.529355000064243e-11
+    },
+    {
+      "source_id": 212,
+      "export_id": 148,
+      "volume_difference_mm3": 9.968061931431293e-10,
+      "max_bbox_difference_mm": 8.554934538551606e-11
+    },
+    {
+      "source_id": 213,
+      "export_id": 149,
+      "volume_difference_mm3": 1.8189894035458565e-10,
+      "max_bbox_difference_mm": 8.571987564209849e-11
+    },
+    {
+      "source_id": 214,
+      "export_id": 150,
+      "volume_difference_mm3": 1.4515535440295935e-09,
+      "max_bbox_difference_mm": 8.529355000064243e-11
+    },
+    {
+      "source_id": 215,
+      "export_id": 151,
+      "volume_difference_mm3": 7.203198038041592e-10,
+      "max_bbox_difference_mm": 8.532197171007283e-11
+    },
+    {
+      "source_id": 216,
+      "export_id": 152,
+      "volume_difference_mm3": 4.427420208230615e-09,
+      "max_bbox_difference_mm": 8.543565854779445e-11
+    },
+    {
+      "source_id": 217,
+      "export_id": 153,
+      "volume_difference_mm3": 3.92901711165905e-09,
+      "max_bbox_difference_mm": 8.537881512893364e-11
+    },
+    {
+      "source_id": 218,
+      "export_id": 154,
+      "volume_difference_mm3": 7.275957614183426e-12,
+      "max_bbox_difference_mm": 8.552092367608566e-11
+    },
+    {
+      "source_id": 219,
+      "export_id": 155,
+      "volume_difference_mm3": 1.5170371625572443e-09,
+      "max_bbox_difference_mm": 8.532197171007283e-11
+    },
+    {
+      "source_id": 220,
+      "export_id": 156,
+      "volume_difference_mm3": 5.893525667488575e-10,
+      "max_bbox_difference_mm": 8.537881512893364e-11
+    },
+    {
+      "source_id": 221,
+      "export_id": 157,
+      "volume_difference_mm3": 6.257323548197746e-10,
+      "max_bbox_difference_mm": 8.543565854779445e-11
+    },
+    {
+      "source_id": 222,
+      "export_id": 158,
+      "volume_difference_mm3": 1.0186340659856796e-10,
+      "max_bbox_difference_mm": 8.543565854779445e-11
+    },
+    {
+      "source_id": 223,
+      "export_id": 159,
+      "volume_difference_mm3": 4.220055416226387e-10,
+      "max_bbox_difference_mm": 8.537881512893364e-11
+    },
+    {
+      "source_id": 224,
+      "export_id": 160,
+      "volume_difference_mm3": 7.09405867382884e-10,
+      "max_bbox_difference_mm": 8.540723683836404e-11
+    },
+    {
+      "source_id": 225,
+      "export_id": 161,
+      "volume_difference_mm3": 7.09405867382884e-10,
+      "max_bbox_difference_mm": 8.540723683836404e-11
+    },
+    {
+      "source_id": 226,
+      "export_id": 162,
+      "volume_difference_mm3": 7.53789208829403e-09,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 227,
+      "export_id": 163,
+      "volume_difference_mm3": 8.330971468240023e-09,
+      "max_bbox_difference_mm": 8.533618256478803e-11
+    },
+    {
+      "source_id": 228,
+      "export_id": 164,
+      "volume_difference_mm3": 5.347828846424818e-10,
+      "max_bbox_difference_mm": 9.15179043659009e-12
+    },
+    {
+      "source_id": 229,
+      "export_id": 165,
+      "volume_difference_mm3": 5.093170329928398e-10,
+      "max_bbox_difference_mm": 9.15179043659009e-12
+    },
+    {
+      "source_id": 230,
+      "export_id": 166,
+      "volume_difference_mm3": 3.019522409886122e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 231,
+      "export_id": 167,
+      "volume_difference_mm3": 3.019522409886122e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 232,
+      "export_id": 168,
+      "volume_difference_mm3": 7.494236342608929e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 233,
+      "export_id": 169,
+      "volume_difference_mm3": 7.566995918750763e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 234,
+      "export_id": 170,
+      "volume_difference_mm3": 2.4010660126805305e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 235,
+      "export_id": 171,
+      "volume_difference_mm3": 2.3283064365386963e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 236,
+      "export_id": 172,
+      "volume_difference_mm3": 1.0913936421275139e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 237,
+      "export_id": 173,
+      "volume_difference_mm3": 1.0913936421275139e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 238,
+      "export_id": 174,
+      "volume_difference_mm3": 8.149072527885437e-10,
+      "max_bbox_difference_mm": 9.066525308298878e-12
+    },
+    {
+      "source_id": 239,
+      "export_id": 175,
+      "volume_difference_mm3": 8.221832104027271e-10,
+      "max_bbox_difference_mm": 9.066525308298878e-12
+    },
+    {
+      "source_id": 240,
+      "export_id": 176,
+      "volume_difference_mm3": 6.912159733474255e-11,
+      "max_bbox_difference_mm": 9.066525308298878e-12
+    },
+    {
+      "source_id": 241,
+      "export_id": 177,
+      "volume_difference_mm3": 1.4915713109076023e-10,
+      "max_bbox_difference_mm": 9.038103598868474e-12
+    },
+    {
+      "source_id": 242,
+      "export_id": 178,
+      "volume_difference_mm3": 3.597961040213704e-09,
+      "max_bbox_difference_mm": 9.052314453583676e-12
+    },
+    {
+      "source_id": 243,
+      "export_id": 179,
+      "volume_difference_mm3": 3.1614035833626986e-09,
+      "max_bbox_difference_mm": 9.066525308298878e-12
+    },
+    {
+      "source_id": 244,
+      "export_id": 180,
+      "volume_difference_mm3": 5.20230969414115e-10,
+      "max_bbox_difference_mm": 4.661160346586257e-12
+    },
+    {
+      "source_id": 245,
+      "export_id": 181,
+      "volume_difference_mm3": 3.4924596548080444e-10,
+      "max_bbox_difference_mm": 4.718003765447065e-12
+    },
+    {
+      "source_id": 246,
+      "export_id": 182,
+      "volume_difference_mm3": 4.147295840084553e-10,
+      "max_bbox_difference_mm": 4.575895218295045e-12
+    },
+    {
+      "source_id": 247,
+      "export_id": 183,
+      "volume_difference_mm3": 5.857145879417658e-10,
+      "max_bbox_difference_mm": 4.661160346586257e-12
+    },
+    {
+      "source_id": 248,
+      "export_id": 184,
+      "volume_difference_mm3": 1.8215359887108207e-08,
+      "max_bbox_difference_mm": 5.091749244456878e-11
+    },
+    {
+      "source_id": 249,
+      "export_id": 185,
+      "volume_difference_mm3": 1.7829734133556485e-08,
+      "max_bbox_difference_mm": 5.091749244456878e-11
+    },
+    {
+      "source_id": 250,
+      "export_id": 186,
+      "volume_difference_mm3": 6.511982064694166e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 251,
+      "export_id": 187,
+      "volume_difference_mm3": 2.473825588822365e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 252,
+      "export_id": 188,
+      "volume_difference_mm3": 2.1464074961841106e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 253,
+      "export_id": 189,
+      "volume_difference_mm3": 2.219167072325945e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 254,
+      "export_id": 190,
+      "volume_difference_mm3": 5.493347998708487e-10,
+      "max_bbox_difference_mm": 5.098854671814479e-11
+    },
+    {
+      "source_id": 255,
+      "export_id": 191,
+      "volume_difference_mm3": 5.566107574850321e-10,
+      "max_bbox_difference_mm": 5.098854671814479e-11
+    },
+    {
+      "source_id": 256,
+      "export_id": 192,
+      "volume_difference_mm3": 5.056790541857481e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 257,
+      "export_id": 193,
+      "volume_difference_mm3": 5.020410753786564e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 258,
+      "export_id": 194,
+      "volume_difference_mm3": 8.614733815193176e-09,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 259,
+      "export_id": 195,
+      "volume_difference_mm3": 8.611095836386085e-09,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 260,
+      "export_id": 196,
+      "volume_difference_mm3": 1.1641532182693481e-10,
+      "max_bbox_difference_mm": 5.0874859880423173e-11
+    },
+    {
+      "source_id": 261,
+      "export_id": 197,
+      "volume_difference_mm3": 1.2005330063402653e-10,
+      "max_bbox_difference_mm": 5.0874859880423173e-11
+    },
+    {
+      "source_id": 262,
+      "export_id": 198,
+      "volume_difference_mm3": 2.672095433808863e-08,
+      "max_bbox_difference_mm": 8.539302598364884e-11
+    },
+    {
+      "source_id": 263,
+      "export_id": 199,
+      "volume_difference_mm3": 2.672095433808863e-08,
+      "max_bbox_difference_mm": 8.539302598364884e-11
+    },
+    {
+      "source_id": 264,
+      "export_id": 200,
+      "volume_difference_mm3": 2.4374458007514477e-10,
+      "max_bbox_difference_mm": 8.532197171007283e-11
+    },
+    {
+      "source_id": 265,
+      "export_id": 201,
+      "volume_difference_mm3": 3.4924596548080444e-10,
+      "max_bbox_difference_mm": 8.532197171007283e-11
+    },
+    {
+      "source_id": 266,
+      "export_id": 202,
+      "volume_difference_mm3": 4.765752237290144e-10,
+      "max_bbox_difference_mm": 8.540723683836404e-11
+    },
+    {
+      "source_id": 267,
+      "export_id": 203,
+      "volume_difference_mm3": 4.765752237290144e-10,
+      "max_bbox_difference_mm": 8.540723683836404e-11
+    },
+    {
+      "source_id": 268,
+      "export_id": 204,
+      "volume_difference_mm3": 3.637978807091713e-12,
+      "max_bbox_difference_mm": 8.529355000064243e-11
+    },
+    {
+      "source_id": 269,
+      "export_id": 205,
+      "volume_difference_mm3": 7.275957614183426e-12,
+      "max_bbox_difference_mm": 8.529355000064243e-11
+    },
+    {
+      "source_id": 270,
+      "export_id": 206,
+      "volume_difference_mm3": 1.3606040738523006e-09,
+      "max_bbox_difference_mm": 8.546408025722485e-11
+    },
+    {
+      "source_id": 271,
+      "export_id": 207,
+      "volume_difference_mm3": 1.3533281162381172e-09,
+      "max_bbox_difference_mm": 8.546408025722485e-11
+    },
+    {
+      "source_id": 272,
+      "export_id": 208,
+      "volume_difference_mm3": 1.9543222151696682e-08,
+      "max_bbox_difference_mm": 8.537881512893364e-11
+    },
+    {
+      "source_id": 273,
+      "export_id": 209,
+      "volume_difference_mm3": 1.898661139421165e-08,
+      "max_bbox_difference_mm": 8.571987564209849e-11
+    },
+    {
+      "source_id": 274,
+      "export_id": 210,
+      "volume_difference_mm3": 1.0550138540565968e-10,
+      "max_bbox_difference_mm": 8.532197171007283e-11
+    },
+    {
+      "source_id": 275,
+      "export_id": 211,
+      "volume_difference_mm3": 3.67435859516263e-10,
+      "max_bbox_difference_mm": 8.552092367608566e-11
+    },
+    {
+      "source_id": 276,
+      "export_id": 212,
+      "volume_difference_mm3": 1.673470251262188e-10,
+      "max_bbox_difference_mm": 8.543565854779445e-11
+    },
+    {
+      "source_id": 277,
+      "export_id": 213,
+      "volume_difference_mm3": 1.3787939678877592e-09,
+      "max_bbox_difference_mm": 8.546408025722485e-11
+    },
+    {
+      "source_id": 278,
+      "export_id": 214,
+      "volume_difference_mm3": 1.7971615307033062e-09,
+      "max_bbox_difference_mm": 8.532197171007283e-11
+    },
+    {
+      "source_id": 279,
+      "export_id": 215,
+      "volume_difference_mm3": 1.9208528101444244e-09,
+      "max_bbox_difference_mm": 8.546408025722485e-11
+    },
+    {
+      "source_id": 280,
+      "export_id": 216,
+      "volume_difference_mm3": 9.313225746154785e-10,
+      "max_bbox_difference_mm": 8.540723683836404e-11
+    },
+    {
+      "source_id": 281,
+      "export_id": 217,
+      "volume_difference_mm3": 3.8198777474462986e-10,
+      "max_bbox_difference_mm": 8.532197171007283e-11
+    },
+    {
+      "source_id": 282,
+      "export_id": 218,
+      "volume_difference_mm3": 9.094947017729282e-10,
+      "max_bbox_difference_mm": 8.537881512893364e-11
+    },
+    {
+      "source_id": 283,
+      "export_id": 219,
+      "volume_difference_mm3": 1.5243131201714277e-09,
+      "max_bbox_difference_mm": 8.543565854779445e-11
+    },
+    {
+      "source_id": 284,
+      "export_id": 220,
+      "volume_difference_mm3": 7.639755494892597e-11,
+      "max_bbox_difference_mm": 8.546408025722485e-11
+    },
+    {
+      "source_id": 285,
+      "export_id": 221,
+      "volume_difference_mm3": 6.257323548197746e-10,
+      "max_bbox_difference_mm": 8.549250196665525e-11
+    },
+    {
+      "source_id": 286,
+      "export_id": 222,
+      "volume_difference_mm3": 3.4560798667371273e-10,
+      "max_bbox_difference_mm": 8.539302598364884e-11
+    },
+    {
+      "source_id": 287,
+      "export_id": 223,
+      "volume_difference_mm3": 3.41970007866621e-10,
+      "max_bbox_difference_mm": 8.539302598364884e-11
+    },
+    {
+      "source_id": 288,
+      "export_id": 224,
+      "volume_difference_mm3": 2.635715645737946e-08,
+      "max_bbox_difference_mm": 8.526512829121202e-11
+    },
+    {
+      "source_id": 289,
+      "export_id": 225,
+      "volume_difference_mm3": 2.635715645737946e-08,
+      "max_bbox_difference_mm": 8.532197171007283e-11
+    },
+    {
+      "source_id": 290,
+      "export_id": 226,
+      "volume_difference_mm3": 2.9831426218152046e-10,
+      "max_bbox_difference_mm": 9.038103598868474e-12
+    },
+    {
+      "source_id": 291,
+      "export_id": 227,
+      "volume_difference_mm3": 3.310560714453459e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 292,
+      "export_id": 228,
+      "volume_difference_mm3": 9.822542779147625e-11,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 293,
+      "export_id": 229,
+      "volume_difference_mm3": 1.0186340659856796e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 294,
+      "export_id": 230,
+      "volume_difference_mm3": 1.5497789718210697e-09,
+      "max_bbox_difference_mm": 9.15179043659009e-12
+    },
+    {
+      "source_id": 295,
+      "export_id": 231,
+      "volume_difference_mm3": 1.5425030142068863e-09,
+      "max_bbox_difference_mm": 9.15179043659009e-12
+    },
+    {
+      "source_id": 296,
+      "export_id": 232,
+      "volume_difference_mm3": 3.2378011383116245e-10,
+      "max_bbox_difference_mm": 9.15179043659009e-12
+    },
+    {
+      "source_id": 297,
+      "export_id": 233,
+      "volume_difference_mm3": 3.2741809263825417e-10,
+      "max_bbox_difference_mm": 9.15179043659009e-12
+    },
+    {
+      "source_id": 298,
+      "export_id": 234,
+      "volume_difference_mm3": 3.7834979593753815e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 299,
+      "export_id": 235,
+      "volume_difference_mm3": 3.7471181713044643e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 300,
+      "export_id": 236,
+      "volume_difference_mm3": 6.548361852765083e-11,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 301,
+      "export_id": 237,
+      "volume_difference_mm3": 5.4569682106375694e-11,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 302,
+      "export_id": 238,
+      "volume_difference_mm3": 2.1100277081131935e-10,
+      "max_bbox_difference_mm": 9.066525308298878e-12
+    },
+    {
+      "source_id": 303,
+      "export_id": 239,
+      "volume_difference_mm3": 3.383320290595293e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 304,
+      "export_id": 240,
+      "volume_difference_mm3": 2.775777829810977e-09,
+      "max_bbox_difference_mm": 9.066525308298878e-12
+    },
+    {
+      "source_id": 305,
+      "export_id": 241,
+      "volume_difference_mm3": 3.128661774098873e-09,
+      "max_bbox_difference_mm": 9.066525308298878e-12
+    },
+    {
+      "source_id": 306,
+      "export_id": 242,
+      "volume_difference_mm3": 4.474713932722807e-10,
+      "max_bbox_difference_mm": 4.718003765447065e-12
+    },
+    {
+      "source_id": 307,
+      "export_id": 243,
+      "volume_difference_mm3": 4.0381564758718014e-10,
+      "max_bbox_difference_mm": 4.661160346586257e-12
+    },
+    {
+      "source_id": 308,
+      "export_id": 244,
+      "volume_difference_mm3": 1.709850039333105e-10,
+      "max_bbox_difference_mm": 4.632738637155853e-12
+    },
+    {
+      "source_id": 309,
+      "export_id": 245,
+      "volume_difference_mm3": 4.729372449219227e-10,
+      "max_bbox_difference_mm": 4.718003765447065e-12
+    },
+    {
+      "source_id": 310,
+      "export_id": 246,
+      "volume_difference_mm3": 1.752414391376078e-08,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 311,
+      "export_id": 247,
+      "volume_difference_mm3": 1.8128048395738006e-08,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 312,
+      "export_id": 248,
+      "volume_difference_mm3": 1.2732925824820995e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 313,
+      "export_id": 249,
+      "volume_difference_mm3": 3.2741809263825417e-11,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 314,
+      "export_id": 250,
+      "volume_difference_mm3": 4.5838532969355583e-10,
+      "max_bbox_difference_mm": 5.0960125008714385e-11
+    },
+    {
+      "source_id": 315,
+      "export_id": 251,
+      "volume_difference_mm3": 4.5838532969355583e-10,
+      "max_bbox_difference_mm": 5.0960125008714385e-11
+    },
+    {
+      "source_id": 316,
+      "export_id": 252,
+      "volume_difference_mm3": 2.1100277081131935e-10,
+      "max_bbox_difference_mm": 5.098854671814479e-11
+    },
+    {
+      "source_id": 317,
+      "export_id": 253,
+      "volume_difference_mm3": 2.0736479200422764e-10,
+      "max_bbox_difference_mm": 5.098854671814479e-11
+    },
+    {
+      "source_id": 318,
+      "export_id": 254,
+      "volume_difference_mm3": 5.857145879417658e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 319,
+      "export_id": 255,
+      "volume_difference_mm3": 5.820766091346741e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 320,
+      "export_id": 256,
+      "volume_difference_mm3": 1.709850039333105e-09,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 321,
+      "export_id": 257,
+      "volume_difference_mm3": 1.7025740817189217e-09,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 322,
+      "export_id": 258,
+      "volume_difference_mm3": 1.8917489796876907e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 323,
+      "export_id": 259,
+      "volume_difference_mm3": 1.709850039333105e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 324,
+      "export_id": 260,
+      "volume_difference_mm3": 1.3278622645884752e-09,
+      "max_bbox_difference_mm": 5.098854671814479e-11
+    },
+    {
+      "source_id": 325,
+      "export_id": 261,
+      "volume_difference_mm3": 1.3278622645884752e-09,
+      "max_bbox_difference_mm": 5.098854671814479e-11
+    },
+    {
+      "source_id": 390,
+      "export_id": 262,
+      "volume_difference_mm3": 0.00019348465139046311,
+      "max_bbox_difference_mm": 8.540723683836404e-11
+    },
+    {
+      "source_id": 391,
+      "export_id": 263,
+      "volume_difference_mm3": 2.2737367544323206e-12,
+      "max_bbox_difference_mm": 5.0874859880423173e-11
+    },
+    {
+      "source_id": 392,
+      "export_id": 264,
+      "volume_difference_mm3": 4.18367562815547e-11,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 393,
+      "export_id": 265,
+      "volume_difference_mm3": 2.7797568691312335e-08,
+      "max_bbox_difference_mm": 5.2295945351943374e-11
+    },
+    {
+      "source_id": 394,
+      "export_id": 266,
+      "volume_difference_mm3": 1.4659917724202387e-09,
+      "max_bbox_difference_mm": 4.524736141320318e-11
+    },
+    {
+      "source_id": 395,
+      "export_id": 267,
+      "volume_difference_mm3": 0.0003764176508411765,
+      "max_bbox_difference_mm": 8.543565854779445e-11
+    },
+    {
+      "source_id": 396,
+      "export_id": 268,
+      "volume_difference_mm3": 1.0913936421275139e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 397,
+      "export_id": 269,
+      "volume_difference_mm3": 1.0913936421275139e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 398,
+      "export_id": 270,
+      "volume_difference_mm3": 2.6193447411060333e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 399,
+      "export_id": 271,
+      "volume_difference_mm3": 6.184563972055912e-11,
+      "max_bbox_difference_mm": 5.098854671814479e-11
+    },
+    {
+      "source_id": 400,
+      "export_id": 272,
+      "volume_difference_mm3": 3.128661774098873e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 401,
+      "export_id": 273,
+      "volume_difference_mm3": 1.3460521586239338e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 402,
+      "export_id": 274,
+      "volume_difference_mm3": 2.3646862246096134e-10,
+      "max_bbox_difference_mm": 5.0960125008714385e-11
+    },
+    {
+      "source_id": 403,
+      "export_id": 275,
+      "volume_difference_mm3": 2.3283064365386963e-10,
+      "max_bbox_difference_mm": 5.0960125008714385e-11
+    },
+    {
+      "source_id": 404,
+      "export_id": 276,
+      "volume_difference_mm3": 3.4560798667371273e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 405,
+      "export_id": 277,
+      "volume_difference_mm3": 3.41970007866621e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 406,
+      "export_id": 278,
+      "volume_difference_mm3": 1.0732037480920553e-09,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 407,
+      "export_id": 279,
+      "volume_difference_mm3": 1.0732037480920553e-09,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 408,
+      "export_id": 280,
+      "volume_difference_mm3": 1.6741978470236063e-08,
+      "max_bbox_difference_mm": 5.097433586342959e-11
+    },
+    {
+      "source_id": 409,
+      "export_id": 281,
+      "volume_difference_mm3": 1.8637365428730845e-08,
+      "max_bbox_difference_mm": 5.097433586342959e-11
+    },
+    {
+      "source_id": 410,
+      "export_id": 282,
+      "volume_difference_mm3": 1.1823431123048067e-09,
+      "max_bbox_difference_mm": 4.661160346586257e-12
+    },
+    {
+      "source_id": 411,
+      "export_id": 283,
+      "volume_difference_mm3": 1.8189894035458565e-10,
+      "max_bbox_difference_mm": 4.547473508864641e-12
+    },
+    {
+      "source_id": 412,
+      "export_id": 284,
+      "volume_difference_mm3": 1.3642420526593924e-09,
+      "max_bbox_difference_mm": 4.433786671143025e-12
+    },
+    {
+      "source_id": 413,
+      "export_id": 285,
+      "volume_difference_mm3": 9.858922567218542e-10,
+      "max_bbox_difference_mm": 4.661160346586257e-12
+    },
+    {
+      "source_id": 414,
+      "export_id": 286,
+      "volume_difference_mm3": 4.5183696784079075e-09,
+      "max_bbox_difference_mm": 9.066525308298878e-12
+    },
+    {
+      "source_id": 415,
+      "export_id": 287,
+      "volume_difference_mm3": 3.903551260009408e-09,
+      "max_bbox_difference_mm": 9.052314453583676e-12
+    },
+    {
+      "source_id": 416,
+      "export_id": 288,
+      "volume_difference_mm3": 6.184563972055912e-11,
+      "max_bbox_difference_mm": 9.137579581874888e-12
+    },
+    {
+      "source_id": 417,
+      "export_id": 289,
+      "volume_difference_mm3": 1.418811734765768e-09,
+      "max_bbox_difference_mm": 9.066525308298878e-12
+    },
+    {
+      "source_id": 418,
+      "export_id": 290,
+      "volume_difference_mm3": 1.2005330063402653e-10,
+      "max_bbox_difference_mm": 9.038103598868474e-12
+    },
+    {
+      "source_id": 419,
+      "export_id": 291,
+      "volume_difference_mm3": 8.731149137020111e-10,
+      "max_bbox_difference_mm": 9.066525308298878e-12
+    },
+    {
+      "source_id": 420,
+      "export_id": 292,
+      "volume_difference_mm3": 6.184563972055912e-11,
+      "max_bbox_difference_mm": 9.15179043659009e-12
+    },
+    {
+      "source_id": 421,
+      "export_id": 293,
+      "volume_difference_mm3": 5.638867150992155e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 422,
+      "export_id": 294,
+      "volume_difference_mm3": 4.94765117764473e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 423,
+      "export_id": 295,
+      "volume_difference_mm3": 4.94765117764473e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 424,
+      "export_id": 296,
+      "volume_difference_mm3": 4.147295840084553e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 425,
+      "export_id": 297,
+      "volume_difference_mm3": 2.6193447411060333e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 426,
+      "export_id": 298,
+      "volume_difference_mm3": 2.9103830456733704e-11,
+      "max_bbox_difference_mm": 9.15179043659009e-12
+    },
+    {
+      "source_id": 427,
+      "export_id": 299,
+      "volume_difference_mm3": 9.677023626863956e-10,
+      "max_bbox_difference_mm": 9.15179043659009e-12
+    },
+    {
+      "source_id": 428,
+      "export_id": 300,
+      "volume_difference_mm3": 2.473825588822365e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 429,
+      "export_id": 301,
+      "volume_difference_mm3": 2.473825588822365e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 430,
+      "export_id": 302,
+      "volume_difference_mm3": 1.8553691916167736e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 431,
+      "export_id": 303,
+      "volume_difference_mm3": 1.8917489796876907e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 432,
+      "export_id": 304,
+      "volume_difference_mm3": 3.892637323588133e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 433,
+      "export_id": 305,
+      "volume_difference_mm3": 3.8562575355172157e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 434,
+      "export_id": 306,
+      "volume_difference_mm3": 2.9103830456733704e-11,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 435,
+      "export_id": 307,
+      "volume_difference_mm3": 3.2741809263825417e-11,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 436,
+      "export_id": 308,
+      "volume_difference_mm3": 2.786327968351543e-07,
+      "max_bbox_difference_mm": 4.4508396968012676e-10
+    },
+    {
+      "source_id": 437,
+      "export_id": 309,
+      "volume_difference_mm3": 2.7865462470799685e-07,
+      "max_bbox_difference_mm": 4.4508396968012676e-10
+    },
+    {
+      "source_id": 438,
+      "export_id": 310,
+      "volume_difference_mm3": 4.5218221202958375e-06,
+      "max_bbox_difference_mm": 2.5352164811920375e-10
+    },
+    {
+      "source_id": 439,
+      "export_id": 311,
+      "volume_difference_mm3": 3.604509402066469e-08,
+      "max_bbox_difference_mm": 4.4633452489506453e-10
+    },
+    {
+      "source_id": 440,
+      "export_id": 312,
+      "volume_difference_mm3": 8.955648809205741e-07,
+      "max_bbox_difference_mm": 4.779394657816738e-10
+    },
+    {
+      "source_id": 441,
+      "export_id": 313,
+      "volume_difference_mm3": 3.231751179555431e-06,
+      "max_bbox_difference_mm": 7.776179700158536e-11
+    },
+    {
+      "source_id": 442,
+      "export_id": 314,
+      "volume_difference_mm3": 2.9406946850940585e-06,
+      "max_bbox_difference_mm": 4.856701707467437e-10
+    },
+    {
+      "source_id": 443,
+      "export_id": 315,
+      "volume_difference_mm3": 3.7150020943954587e-06,
+      "max_bbox_difference_mm": 8.571987564209849e-11
+    },
+    {
+      "source_id": 444,
+      "export_id": 316,
+      "volume_difference_mm3": 8.170864020939916e-07,
+      "max_bbox_difference_mm": 2.858087100321427e-10
+    },
+    {
+      "source_id": 445,
+      "export_id": 317,
+      "volume_difference_mm3": 1.1793636076617986e-06,
+      "max_bbox_difference_mm": 4.772573447553441e-10
+    },
+    {
+      "source_id": 446,
+      "export_id": 318,
+      "volume_difference_mm3": 3.770743205677718e-06,
+      "max_bbox_difference_mm": 4.149569576838985e-10
+    },
+    {
+      "source_id": 447,
+      "export_id": 319,
+      "volume_difference_mm3": 1.4969773474149406e-06,
+      "max_bbox_difference_mm": 3.560671757441014e-10
+    },
+    {
+      "source_id": 448,
+      "export_id": 320,
+      "volume_difference_mm3": 1.3321659935172647e-06,
+      "max_bbox_difference_mm": 4.0586201066616923e-10
+    },
+    {
+      "source_id": 449,
+      "export_id": 321,
+      "volume_difference_mm3": 1.334243279416114e-06,
+      "max_bbox_difference_mm": 4.0313352656085044e-10
+    },
+    {
+      "source_id": 450,
+      "export_id": 322,
+      "volume_difference_mm3": 1.1870979506056756e-06,
+      "max_bbox_difference_mm": 1.8565060599939898e-10
+    },
+    {
+      "source_id": 451,
+      "export_id": 323,
+      "volume_difference_mm3": 1.1871270544361323e-06,
+      "max_bbox_difference_mm": 1.8565060599939898e-10
+    },
+    {
+      "source_id": 452,
+      "export_id": 324,
+      "volume_difference_mm3": 4.511093720793724e-10,
+      "max_bbox_difference_mm": 5.098854671814479e-11
+    },
+    {
+      "source_id": 453,
+      "export_id": 325,
+      "volume_difference_mm3": 4.511093720793724e-10,
+      "max_bbox_difference_mm": 5.098854671814479e-11
+    },
+    {
+      "source_id": 454,
+      "export_id": 326,
+      "volume_difference_mm3": 5.056790541857481e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 455,
+      "export_id": 327,
+      "volume_difference_mm3": 5.056790541857481e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 456,
+      "export_id": 328,
+      "volume_difference_mm3": 4.802132025361061e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 457,
+      "export_id": 329,
+      "volume_difference_mm3": 4.838511813431978e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 458,
+      "export_id": 330,
+      "volume_difference_mm3": 1.2369127944111824e-10,
+      "max_bbox_difference_mm": 5.0874859880423173e-11
+    },
+    {
+      "source_id": 459,
+      "export_id": 331,
+      "volume_difference_mm3": 1.3460521586239338e-10,
+      "max_bbox_difference_mm": 5.0874859880423173e-11
+    },
+    {
+      "source_id": 460,
+      "export_id": 332,
+      "volume_difference_mm3": 1.0186340659856796e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 461,
+      "export_id": 333,
+      "volume_difference_mm3": 9.822542779147625e-11,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 462,
+      "export_id": 334,
+      "volume_difference_mm3": 5.820766091346741e-11,
+      "max_bbox_difference_mm": 5.0874859880423173e-11
+    },
+    {
+      "source_id": 463,
+      "export_id": 335,
+      "volume_difference_mm3": 1.4551915228366852e-10,
+      "max_bbox_difference_mm": 5.0874859880423173e-11
+    },
+    {
+      "source_id": 464,
+      "export_id": 336,
+      "volume_difference_mm3": 4.547473508864641e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 465,
+      "export_id": 337,
+      "volume_difference_mm3": 4.474713932722807e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 466,
+      "export_id": 338,
+      "volume_difference_mm3": 5.165929906070232e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 467,
+      "export_id": 339,
+      "volume_difference_mm3": 5.165929906070232e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 468,
+      "export_id": 340,
+      "volume_difference_mm3": 1.3860699255019426e-09,
+      "max_bbox_difference_mm": 5.0945914153999183e-11
+    },
+    {
+      "source_id": 469,
+      "export_id": 341,
+      "volume_difference_mm3": 1.3860699255019426e-09,
+      "max_bbox_difference_mm": 5.0945914153999183e-11
+    },
+    {
+      "source_id": 470,
+      "export_id": 342,
+      "volume_difference_mm3": 1.9597791833803058e-08,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 471,
+      "export_id": 343,
+      "volume_difference_mm3": 1.8910213839262724e-08,
+      "max_bbox_difference_mm": 5.0945914153999183e-11
+    },
+    {
+      "source_id": 472,
+      "export_id": 344,
+      "volume_difference_mm3": 3.092281986027956e-10,
+      "max_bbox_difference_mm": 4.433786671143025e-12
+    },
+    {
+      "source_id": 473,
+      "export_id": 345,
+      "volume_difference_mm3": 7.967173587530851e-10,
+      "max_bbox_difference_mm": 4.661160346586257e-12
+    },
+    {
+      "source_id": 474,
+      "export_id": 346,
+      "volume_difference_mm3": 2.1827872842550278e-10,
+      "max_bbox_difference_mm": 4.320099833421409e-12
+    },
+    {
+      "source_id": 475,
+      "export_id": 347,
+      "volume_difference_mm3": 1.3969838619232178e-09,
+      "max_bbox_difference_mm": 4.320099833421409e-12
+    },
+    {
+      "source_id": 476,
+      "export_id": 348,
+      "volume_difference_mm3": 2.219167072325945e-09,
+      "max_bbox_difference_mm": 9.066525308298878e-12
+    },
+    {
+      "source_id": 477,
+      "export_id": 349,
+      "volume_difference_mm3": 1.7716956790536642e-09,
+      "max_bbox_difference_mm": 9.066525308298878e-12
+    },
+    {
+      "source_id": 478,
+      "export_id": 350,
+      "volume_difference_mm3": 9.313225746154785e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 479,
+      "export_id": 351,
+      "volume_difference_mm3": 3.892637323588133e-10,
+      "max_bbox_difference_mm": 9.038103598868474e-12
+    },
+    {
+      "source_id": 480,
+      "export_id": 352,
+      "volume_difference_mm3": 1.291482476517558e-09,
+      "max_bbox_difference_mm": 9.066525308298878e-12
+    },
+    {
+      "source_id": 481,
+      "export_id": 353,
+      "volume_difference_mm3": 1.5388650353997946e-09,
+      "max_bbox_difference_mm": 9.180212146020494e-12
+    },
+    {
+      "source_id": 482,
+      "export_id": 354,
+      "volume_difference_mm3": 4.729372449219227e-11,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 483,
+      "export_id": 355,
+      "volume_difference_mm3": 7.748894859105349e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 484,
+      "export_id": 356,
+      "volume_difference_mm3": 5.4569682106375694e-11,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 485,
+      "export_id": 357,
+      "volume_difference_mm3": 5.093170329928398e-11,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 486,
+      "export_id": 358,
+      "volume_difference_mm3": 8.36735125631094e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 487,
+      "export_id": 359,
+      "volume_difference_mm3": 6.330083124339581e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 488,
+      "export_id": 360,
+      "volume_difference_mm3": 1.6370904631912708e-10,
+      "max_bbox_difference_mm": 9.038103598868474e-12
+    },
+    {
+      "source_id": 489,
+      "export_id": 361,
+      "volume_difference_mm3": 8.694769348949194e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 490,
+      "export_id": 362,
+      "volume_difference_mm3": 1.3096723705530167e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 491,
+      "export_id": 363,
+      "volume_difference_mm3": 1.3460521586239338e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 492,
+      "export_id": 364,
+      "volume_difference_mm3": 8.731149137020111e-11,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 493,
+      "export_id": 365,
+      "volume_difference_mm3": 9.458744898438454e-11,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 494,
+      "export_id": 366,
+      "volume_difference_mm3": 3.092281986027956e-10,
+      "max_bbox_difference_mm": 9.15179043659009e-12
+    },
+    {
+      "source_id": 495,
+      "export_id": 367,
+      "volume_difference_mm3": 3.128661774098873e-10,
+      "max_bbox_difference_mm": 9.15179043659009e-12
+    },
+    {
+      "source_id": 496,
+      "export_id": 368,
+      "volume_difference_mm3": 3.128661774098873e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 497,
+      "export_id": 369,
+      "volume_difference_mm3": 3.128661774098873e-10,
+      "max_bbox_difference_mm": 9.094947017729282e-12
+    },
+    {
+      "source_id": 498,
+      "export_id": 370,
+      "volume_difference_mm3": 2.1994856069795787e-07,
+      "max_bbox_difference_mm": 2.5488589017186314e-10
+    },
+    {
+      "source_id": 499,
+      "export_id": 371,
+      "volume_difference_mm3": 2.1994856069795787e-07,
+      "max_bbox_difference_mm": 2.5488589017186314e-10
+    },
+    {
+      "source_id": 500,
+      "export_id": 372,
+      "volume_difference_mm3": 3.8835423765704036e-08,
+      "max_bbox_difference_mm": 4.1450221033301204e-10
+    },
+    {
+      "source_id": 501,
+      "export_id": 373,
+      "volume_difference_mm3": 8.573952072765678e-07,
+      "max_bbox_difference_mm": 1.5438672562595457e-10
+    },
+    {
+      "source_id": 502,
+      "export_id": 374,
+      "volume_difference_mm3": 3.2624666346237063e-07,
+      "max_bbox_difference_mm": 3.781224222620949e-10
+    },
+    {
+      "source_id": 503,
+      "export_id": 375,
+      "volume_difference_mm3": 6.734990165568888e-08,
+      "max_bbox_difference_mm": 1.1436895874794573e-10
+    },
+    {
+      "source_id": 504,
+      "export_id": 376,
+      "volume_difference_mm3": 1.4846009435132146e-06,
+      "max_bbox_difference_mm": 3.8562575355172157e-10
+    },
+    {
+      "source_id": 505,
+      "export_id": 377,
+      "volume_difference_mm3": 2.2560780053026974e-06,
+      "max_bbox_difference_mm": 5.775291356258094e-11
+    },
+    {
+      "source_id": 506,
+      "export_id": 378,
+      "volume_difference_mm3": 2.6302550395485014e-06,
+      "max_bbox_difference_mm": 1.8553691916167736e-10
+    },
+    {
+      "source_id": 507,
+      "export_id": 379,
+      "volume_difference_mm3": 4.1382372728548944e-07,
+      "max_bbox_difference_mm": 4.854427970713004e-10
+    },
+    {
+      "source_id": 508,
+      "export_id": 380,
+      "volume_difference_mm3": 2.8180475055705756e-06,
+      "max_bbox_difference_mm": 4.1677594708744437e-10
+    },
+    {
+      "source_id": 509,
+      "export_id": 381,
+      "volume_difference_mm3": 2.2018066374585032e-06,
+      "max_bbox_difference_mm": 2.5625013222452253e-10
+    },
+    {
+      "source_id": 510,
+      "export_id": 382,
+      "volume_difference_mm3": 1.8015489331446588e-06,
+      "max_bbox_difference_mm": 3.1468516681343317e-10
+    },
+    {
+      "source_id": 511,
+      "export_id": 383,
+      "volume_difference_mm3": 1.8016944522969425e-06,
+      "max_bbox_difference_mm": 3.453806129982695e-10
+    },
+    {
+      "source_id": 512,
+      "export_id": 384,
+      "volume_difference_mm3": 1.3991229934617877e-06,
+      "max_bbox_difference_mm": 1.1425527191022411e-10
+    },
+    {
+      "source_id": 513,
+      "export_id": 385,
+      "volume_difference_mm3": 1.3991193554829806e-06,
+      "max_bbox_difference_mm": 1.1425527191022411e-10
+    },
+    {
+      "source_id": 514,
+      "export_id": 386,
+      "volume_difference_mm3": 3.019522409886122e-10,
+      "max_bbox_difference_mm": 5.098854671814479e-11
+    },
+    {
+      "source_id": 515,
+      "export_id": 387,
+      "volume_difference_mm3": 2.9831426218152046e-10,
+      "max_bbox_difference_mm": 5.098854671814479e-11
+    },
+    {
+      "source_id": 516,
+      "export_id": 388,
+      "volume_difference_mm3": 5.384208634495735e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 517,
+      "export_id": 389,
+      "volume_difference_mm3": 5.384208634495735e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 518,
+      "export_id": 390,
+      "volume_difference_mm3": 6.184563972055912e-11,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 519,
+      "export_id": 391,
+      "volume_difference_mm3": 5.4569682106375694e-11,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 520,
+      "export_id": 392,
+      "volume_difference_mm3": 1.9281287677586079e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 521,
+      "export_id": 393,
+      "volume_difference_mm3": 1.7826096154749393e-10,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 522,
+      "export_id": 394,
+      "volume_difference_mm3": 2.3646862246096134e-10,
+      "max_bbox_difference_mm": 5.098854671814479e-11
+    },
+    {
+      "source_id": 523,
+      "export_id": 395,
+      "volume_difference_mm3": 2.3646862246096134e-10,
+      "max_bbox_difference_mm": 5.098854671814479e-11
+    },
+    {
+      "source_id": 588,
+      "export_id": 396,
+      "volume_difference_mm3": 0.00025629281299188733,
+      "max_bbox_difference_mm": 1.2391865311656147e-10
+    },
+    {
+      "source_id": 589,
+      "export_id": 397,
+      "volume_difference_mm3": 4.547473508864641e-12,
+      "max_bbox_difference_mm": 5.0874859880423173e-11
+    },
+    {
+      "source_id": 590,
+      "export_id": 398,
+      "volume_difference_mm3": 1.8189894035458565e-11,
+      "max_bbox_difference_mm": 5.093170329928398e-11
+    },
+    {
+      "source_id": 591,
+      "export_id": 399,
+      "volume_difference_mm3": 2.6706629796535708e-08,
+      "max_bbox_difference_mm": 5.2295945351943374e-11
+    },
+    {
+      "source_id": 592,
+      "export_id": 400,
+      "volume_difference_mm3": 7.038579497020692e-09,
+      "max_bbox_difference_mm": 4.524736141320318e-11
+    },
+    {
+      "source_id": 593,
+      "export_id": 401,
+      "volume_difference_mm3": 0.0003821438876911998,
+      "max_bbox_difference_mm": 5.348965714802034e-11
+    }
+  ],
+  "solidworks_tested": false
+}
