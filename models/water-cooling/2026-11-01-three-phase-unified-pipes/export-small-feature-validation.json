@@ -1,0 +1,50 @@
+[
+  {
+    "phase": 1,
+    "role": "unified_copper_pipe",
+    "min_edge_mm": 2.6160915808377903,
+    "min_face_width_estimate_mm": 0.9999999999828398,
+    "short_edges_below_50um": 0,
+    "narrow_faces_below_50um": 0
+  },
+  {
+    "phase": 1,
+    "role": "water",
+    "min_edge_mm": 3.0229447632419886,
+    "min_face_width_estimate_mm": 2.673818547517751,
+    "short_edges_below_50um": 0,
+    "narrow_faces_below_50um": 0
+  },
+  {
+    "phase": 2,
+    "role": "unified_copper_pipe",
+    "min_edge_mm": 2.616091580837728,
+    "min_face_width_estimate_mm": 0.999999999981004,
+    "short_edges_below_50um": 0,
+    "narrow_faces_below_50um": 0
+  },
+  {
+    "phase": 2,
+    "role": "water",
+    "min_edge_mm": 3.022944763242064,
+    "min_face_width_estimate_mm": 2.673818547517761,
+    "short_edges_below_50um": 0,
+    "narrow_faces_below_50um": 0
+  },
+  {
+    "phase": 3,
+    "role": "unified_copper_pipe",
+    "min_edge_mm": 2.6160915808377903,
+    "min_face_width_estimate_mm": 0.9999999999809972,
+    "short_edges_below_50um": 0,
+    "narrow_faces_below_50um": 0
+  },
+  {
+    "phase": 3,
+    "role": "water",
+    "min_edge_mm": 3.0229447632419886,
+    "min_face_width_estimate_mm": 2.6738185475177616,
+    "short_edges_below_50um": 0,
+    "narrow_faces_below_50um": 0
+  }
+]

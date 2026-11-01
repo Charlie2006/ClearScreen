@@ -1,0 +1,26 @@
+[
+  {
+    "file": "ThreePhase_Cooling_Unified_Pipes_Flat.step",
+    "solids": 390,
+    "all_valid": true,
+    "step_products": 1,
+    "assembly_occurrences": 0,
+    "volume_difference_mm3": 0.0004669874906539917
+  },
+  {
+    "file": "ThreePhase_Unified_Copper_Pipes.step",
+    "solids": 3,
+    "all_valid": true,
+    "step_products": 1,
+    "assembly_occurrences": 0,
+    "volume_difference_mm3": 0.00038609467446804047
+  },
+  {
+    "file": "ThreePhase_Water_Domains.step",
+    "solids": 3,
+    "all_valid": true,
+    "step_products": 1,
+    "assembly_occurrences": 0,
+    "volume_difference_mm3": -7.965601980686188e-06
+  }
+]

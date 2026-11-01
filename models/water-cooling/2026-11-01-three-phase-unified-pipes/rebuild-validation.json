@@ -1,0 +1,87 @@
+{
+  "adapters": [
+    {
+      "original_extension": 130,
+      "original_adapter": 131,
+      "rectangle_center": [
+        -820.040503259023,
+        -340.3266757200433,
+        -207.5
+      ],
+      "circular_center": [
+        -820.0423406179767,
+        -340.3289808733977,
+        -227.5
+      ],
+      "rectangle_outer_mm": [
+        12,
+        10
+      ],
+      "rectangle_inner_mm": [
+        10,
+        8
+      ],
+      "circle_outer_diameter_mm": 12,
+      "circle_inner_diameter_mm": 10,
+      "length_mm": 20.0,
+      "adapter_volume_mm3": 749.1386964035112,
+      "adapter_faces": 10
+    },
+    {
+      "original_extension": 129,
+      "original_adapter": 132,
+      "rectangle_center": [
+        -760.1375042873483,
+        -340.3488384599,
+        -207.5
+      ],
+      "circular_center": [
+        -760.1328254983747,
+        -340.354542697878,
+        -227.5
+      ],
+      "rectangle_outer_mm": [
+        12,
+        10
+      ],
+      "rectangle_inner_mm": [
+        10,
+        8
+      ],
+      "circle_outer_diameter_mm": 12,
+      "circle_inner_diameter_mm": 10,
+      "length_mm": 20.0,
+      "adapter_volume_mm3": 749.1386964034837,
+      "adapter_faces": 10
+    }
+  ],
+  "copper_solids": 1,
+  "copper_valid": true,
+  "copper_faces": 1031,
+  "water_solids": 1,
+  "water_valid": true,
+  "water_faces": 517,
+  "copper_volume_mm3": 488255.9944355455,
+  "water_volume_mm3": 976709.6858462343,
+  "water_volume_litres": 0.9767096858462343,
+  "water_ends": [
+    {
+      "face": 10,
+      "center": [
+        -760.1328254983747,
+        -340.354542697878,
+        -227.50000000000003
+      ],
+      "area_mm2": 78.539816339745
+    },
+    {
+      "face": 1013,
+      "center": [
+        -820.0423406179767,
+        -340.32898087339777,
+        -227.50000000000003
+      ],
+      "area_mm2": 78.53981633974475
+    }
+  ]
+}
