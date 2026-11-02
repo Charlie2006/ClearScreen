@@ -1,0 +1,35 @@
+{
+  "total_solids": 390,
+  "aluminium_fins": 384,
+  "closed_copper_pipes": 3,
+  "closed_water_domains": 3,
+  "strict_xz_symmetry": true,
+  "fin_axis_alignment": {
+    "fins_per_phase": 128,
+    "fins_per_straight": 4,
+    "paired_fins_centered_about_pipe_axis": true,
+    "max_pair_midpoint_axis_error_mm": 3.867128431391586e-12,
+    "max_tangential_centerline_offset_mm": 1.5383250224350013e-12,
+    "max_radial_offset_error_mm": 4.842348744205083e-12,
+    "max_sampled_xz_mirror_error_mm": 1.2506359558239978e-12,
+    "fin_width_mm": 50,
+    "fin_height_mm": 180,
+    "fin_thickness_mm": 2,
+    "corner_radius_mm": 10
+  },
+  "reference_phase_fin_pipe_contacts_checked": 128,
+  "min_planar_contact_area_mm2": 1679.99999811766,
+  "max_fin_pipe_volume_overlap_mm3": 0,
+  "fin_fin_bbox_candidate_pairs_checked": 40,
+  "max_fin_fin_overlap_mm3": 0,
+  "water_fin_pairs_checked": 128,
+  "max_water_fin_overlap_mm3": 0,
+  "copper_water_overlap_mm3": 0,
+  "other_phases_translation_x_mm": [
+    790,
+    1580
+  ],
+  "port_count": 0,
+  "solidworks_tested": false,
+  "comsol_meshing_tested": false
+}

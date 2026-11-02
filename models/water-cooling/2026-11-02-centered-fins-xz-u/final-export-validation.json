@@ -1,0 +1,14 @@
+{
+  "file": "ThreePhase_Cooling_Centered_Fins_XZ_U_Flat.step",
+  "solids": 390,
+  "aluminium_fins": 384,
+  "closed_copper_pipes": 3,
+  "closed_water_domains": 3,
+  "all_solids_valid": true,
+  "step_products": 1,
+  "assembly_occurrences": 0,
+  "max_bbox_delta_mm": 4.504272510530427e-10,
+  "max_body_relative_volume_delta": 1.4762363658423796e-10,
+  "solidworks_tested": false,
+  "comsol_meshing_tested": false
+}
