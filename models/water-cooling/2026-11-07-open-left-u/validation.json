@@ -1,0 +1,108 @@
+{
+  "total_solids": 390,
+  "aluminium_fins": 384,
+  "open_copper_pipes": 3,
+  "water_domains": 3,
+  "ports_per_phase": 2,
+  "unchanged_fin_max_vertex_error_mm": 0.0,
+  "xz_symmetry": "Inherited symmetric source; material removed by y-symmetric box in each phase",
+  "body_checks": [
+    {
+      "role": "copper",
+      "phase": 1,
+      "volume_mm3": 481560.08228450635,
+      "vertex_mirror_distance_mm": 9.00399754755199e-11,
+      "min_edge_mm": 1.7454101969864462,
+      "min_face_width_estimate_mm": 1.0000000001428058
+    },
+    {
+      "role": "copper",
+      "phase": 2,
+      "volume_mm3": 481560.0823651927,
+      "vertex_mirror_distance_mm": 9.00399754755199e-11,
+      "min_edge_mm": 1.7454101969867113,
+      "min_face_width_estimate_mm": 1.0000000000211764
+    },
+    {
+      "role": "copper",
+      "phase": 3,
+      "volume_mm3": 481560.0823875112,
+      "vertex_mirror_distance_mm": 9.00399754755199e-11,
+      "min_edge_mm": 1.7454101970001945,
+      "min_face_width_estimate_mm": 1.0000000000068823
+    },
+    {
+      "role": "water",
+      "phase": 1,
+      "volume_mm3": 963120.1703754214,
+      "vertex_mirror_distance_mm": 9.00399754755199e-11,
+      "min_edge_mm": 1.8600664171012398,
+      "min_face_width_estimate_mm": 1.6000732204479786
+    },
+    {
+      "role": "water",
+      "phase": 2,
+      "volume_mm3": 963120.170330567,
+      "vertex_mirror_distance_mm": 9.00399754755199e-11,
+      "min_edge_mm": 1.8600664171020576,
+      "min_face_width_estimate_mm": 1.6000732204467447
+    },
+    {
+      "role": "water",
+      "phase": 3,
+      "volume_mm3": 963120.170368708,
+      "vertex_mirror_distance_mm": 9.00399754755199e-11,
+      "min_edge_mm": 1.8600664171149295,
+      "min_face_width_estimate_mm": 1.6000732204573733
+    }
+  ],
+  "source_overlap_checks": {
+    "total_solids": 390,
+    "aluminium_fins": 384,
+    "closed_copper_pipes": 3,
+    "closed_water_domains": 3,
+    "strict_xz_symmetry": true,
+    "fin_axis_alignment": {
+      "fins_per_phase": 128,
+      "fins_per_straight": 4,
+      "paired_fins_centered_about_pipe_axis": true,
+      "max_pair_midpoint_axis_error_mm": 3.867128431391586e-12,
+      "max_tangential_centerline_offset_mm": 1.5383250224350013e-12,
+      "max_radial_offset_error_mm": 4.842348744205083e-12,
+      "max_sampled_xz_mirror_error_mm": 1.2506359558239978e-12,
+      "fin_width_mm": 50,
+      "fin_height_mm": 180,
+      "fin_thickness_mm": 2,
+      "corner_radius_mm": 10
+    },
+    "reference_phase_fin_pipe_contacts_checked": 128,
+    "min_planar_contact_area_mm2": 1679.99999811766,
+    "max_fin_pipe_volume_overlap_mm3": 0,
+    "fin_fin_bbox_candidate_pairs_checked": 40,
+    "max_fin_fin_overlap_mm3": 0,
+    "water_fin_pairs_checked": 128,
+    "max_water_fin_overlap_mm3": 0,
+    "copper_water_overlap_mm3": 0,
+    "other_phases_translation_x_mm": [
+      790,
+      1580
+    ],
+    "port_count": 0,
+    "solidworks_tested": false,
+    "comsol_meshing_tested": false
+  },
+  "overlap_reason": "Only subtraction applied to Cu and water; unchanged fins. Subsets of disjoint source solids remain disjoint.",
+  "step_products": 1,
+  "step_assembly_references": 0,
+  "step_roundtrip_valid_solids": 390,
+  "comsol_meshing_tested": false,
+  "solidworks_tested": false,
+  "three_phase_volume_relative_spread": {
+    "copper": 2.1389824991396535e-10,
+    "water": 4.657192240427851e-11
+  },
+  "three_phase_port_translation_verified_mm": [
+    790,
+    1580
+  ]
+}
