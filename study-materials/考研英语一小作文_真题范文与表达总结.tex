@@ -1,0 +1,330 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage[margin=19mm,top=18mm,bottom=18mm,headheight=13pt,headsep=5mm,footskip=9mm]{geometry}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{tabularx,array,booktabs}
+\usepackage{ragged2e}
+\usepackage{microtype}
+\usepackage{needspace}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+% Original fonts are used when available; fallbacks preserve the intended style.
+\IfFontExistsTF{Times New Roman}
+  {\setmainfont{Times New Roman}}
+  {\setmainfont{Tinos}}
+\IfFontExistsTF{SimSun}
+  {\setCJKmainfont{SimSun}}
+  {\setCJKsansfont{SimHei}}
+  {\setCJKmainfont{Noto Serif CJK SC}}
+\setCJKsansfont{Noto Sans CJK SC}
+
+\definecolor{ink}{HTML}{202020}
+\definecolor{navy}{HTML}{263F56}
+\definecolor{gray}{HTML}{666666}
+\definecolor{lightgray}{HTML}{F5F6F7}
+\definecolor{rulegray}{HTML}{C8CDD2}
+\color{ink}
+\hypersetup{hidelinks}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setstretch{1.0}
+\emergencystretch=3em
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.05}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\fontsize{8.5pt}{10pt}\selectfont\color{gray}考研英语（一）小作文}
+\fancyhead[R]{\fontsize{8.5pt}{10pt}\selectfont\color{gray}真题与习作积累}
+\fancyfoot[C]{\fontsize{8.5pt}{10pt}\selectfont\color{gray}\thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\pageheading}[1]{%
+  \begin{center}
+    {\fontsize{16pt}{20pt}\selectfont\bfseries\color{navy}#1}
+  \end{center}
+  \vspace{2mm}
+}
+\newcommand{\sectionlabel}[1]{%
+  \vspace{1.5mm}
+  {\fontsize{11pt}{14pt}\selectfont\bfseries\color{navy}#1\par}
+  \vspace{1mm}
+}
+\newenvironment{promptbox}{%
+  \begin{tcolorbox}[colback=lightgray,colframe=rulegray,boxrule=.35pt,arc=.5mm,
+  left=2.2mm,right=2.2mm,top=1.4mm,bottom=1.4mm,before skip=0pt,after skip=1mm]
+  \fontsize{11pt}{13.4pt}\selectfont
+  \RaggedRight
+}{%
+  \end{tcolorbox}
+}
+\newenvironment{essaybody}{%
+  \fontsize{14pt}{20pt}\selectfont
+  \RaggedRight
+  \setlength{\parskip}{5pt}
+}{\par}
+\newcommand{\expressions}[1]{%
+  \sectionlabel{表达总结}
+  {\fontsize{10.8pt}{13.2pt}\selectfont
+  \begin{tabularx}{\textwidth}{>{\RaggedRight\arraybackslash}p{0.46\textwidth} >{\RaggedRight\arraybackslash}X}
+  \toprule
+  \textbf{表达} & \textbf{含义／用法}\\
+  \midrule
+  #1
+  \bottomrule
+  \end{tabularx}}
+}
+\newcommand{\exprow}[2]{\textbf{#1} & #2\\}
+\newcommand{\noticeissuer}[1]{%
+  \par\vspace{2mm}\begin{flushright}\fontsize{14pt}{20pt}\selectfont #1\end{flushright}
+}
+
+\begin{document}
+
+% -------------------- 2010 --------------------
+\thispagestyle{fancy}
+\pageheading{2010 年考研英语（一）小作文}
+\sectionlabel{考试题目（Directions）}
+\begin{promptbox}
+You are supposed to write for the Postgraduates' Association a notice to recruit volunteers for an international conference on globalization. The notice should include the basic qualifications of applicants and other information which you think is relevant.
+
+You should write about 100 words on ANSWER SHEET 2.
+
+Do not sign your own name at the end of the notice. Use "Postgraduates' Association" instead. (10 points)
+\end{promptbox}
+
+\sectionlabel{润色范文}
+\begin{essaybody}
+\begin{center}
+\textbf{Volunteers Wanted}
+\end{center}
+The Postgraduates' Association is recruiting volunteers for an international conference on globalization to be held at our university. The volunteers will assist with the organization of the event and provide support to foreign participants.
+
+Applicants should have a good command of English, be willing to communicate with others, and be able to work cooperatively as part of a team. Above all, they should have a strong sense of responsibility. Those with relevant experience will be given preference.
+
+Interested students should submit their application forms to the Postgraduates' Association by this Sunday. We look forward to your participation.
+\noticeissuer{Postgraduates' Association}
+\end{essaybody}
+
+\expressions{
+\exprow{recruit volunteers for...}{为……招募志愿者。}
+\exprow{assist with the organization of...}{协助……的组织工作。}
+\exprow{have a good command of English}{英语掌握熟练；具备良好的英语能力。}
+\exprow{work cooperatively with others}{与他人协作。}
+\exprow{be given preference}{获得优先考虑。}
+\exprow{submit an application form by...}{在……之前提交申请表。}
+}
+
+\newpage
+% -------------------- 2012 --------------------
+\thispagestyle{fancy}
+\pageheading{2012 年考研英语（一）小作文}
+\sectionlabel{考试题目（Directions）}
+\begin{promptbox}
+Some international students are coming to your university. Write them an email in the name of the Students' Union to:
+
+1) extend your welcome; and
+
+2) provide some suggestions for their campus life here.
+
+You should write about 100 words on ANSWER SHEET 2. Do not sign your name at the end of the letter. Use "Li Ming" instead.
+
+Do not write the address. (10 points)
+\end{promptbox}
+
+\sectionlabel{润色范文}
+\begin{essaybody}
+Dear International Students,
+
+On behalf of the Students' Union, I am delighted to extend a warm welcome to all of you. We look forward to having you on campus.
+
+To help you settle in and make the most of campus life, I suggest that you take part in extracurricular activities organized by student clubs, where you can meet people who share your interests. Learning some basic Chinese will also make it easier to communicate with local students. Should you encounter any difficulties, please feel free to contact your counselor for assistance.
+
+We hope you will enjoy a rewarding and memorable university experience. We look forward to meeting you on campus.
+
+Yours faithfully,
+
+Li Ming
+\end{essaybody}
+
+\expressions{
+\exprow{on behalf of...}{代表……。}
+\exprow{extend a warm welcome to...}{向……表示热烈欢迎。}
+\exprow{settle in}{适应并安顿下来。}
+\exprow{make the most of...}{充分利用／充分享受……。}
+\exprow{take part in extracurricular activities}{参加课外活动。}
+\exprow{Should you encounter any difficulties...}{如果遇到任何困难……；省略 if 的倒装条件句。}
+}
+
+\newpage
+% -------------------- 2016 --------------------
+\thispagestyle{fancy}
+\pageheading{2016 年考研英语（一）小作文}
+\sectionlabel{考试题目（Directions）}
+\begin{promptbox}
+Suppose you are a librarian in your university. Write a notice of about 100 words, providing the newly-enrolled international students with relevant information about the library.
+
+You should write neatly on the ANSWER SHEET.
+
+Do not sign your own name at the end of the notice. Use "Li Ming" instead.
+
+Do not write the address. (10 points)
+\end{promptbox}
+
+\sectionlabel{润色范文}
+\begin{essaybody}
+\begin{center}
+\textbf{Notice}
+\end{center}
+Welcome to our university! As the librarian, I would like to share some practical information about the library with newly enrolled international students.
+
+The library is open from 6:30 a.m. to 10:30 p.m. on both weekdays and weekends. Please bring your student ID card when entering. Seats can be reserved online or at the service desk. If you have any difficulty using the booking system, please ask a librarian or volunteer for assistance.
+
+For everyone's comfort, please refrain from bringing food with strong odors into the library. We hope the library will provide a pleasant and productive place for your study.
+\noticeissuer{Li Ming}
+\end{essaybody}
+
+\expressions{
+\exprow{share practical information about...}{介绍有关……的实用信息。}
+\exprow{be open from...to...}{开放时间为……至……。}
+\exprow{reserve a seat online}{在线预约座位。}
+\exprow{ask sb. for assistance}{向某人寻求帮助。}
+\exprow{refrain from doing sth.}{避免／不要做某事；较正式、礼貌。}
+\exprow{a pleasant and productive place for study}{舒适且有助于学习的场所。}
+}
+
+\newpage
+% -------------------- 2017 --------------------
+\thispagestyle{fancy}
+\pageheading{2017 年考研英语（一）小作文}
+\sectionlabel{考试题目（Directions）}
+\begin{promptbox}
+You are to write an email to James Cook, a newly-arrived Australian professor, recommending some tourist attractions in your city. Please give reasons for your recommendation.
+
+You should write neatly on the ANSWER SHEET.
+
+Do not sign your own name at the end of the email. Use "Li Ming" instead.
+
+Do not write the address. (10 points)
+\end{promptbox}
+
+\sectionlabel{润色范文}
+\begin{essaybody}
+Dear Professor Cook,
+
+Welcome to our city! As a local resident, I would like to recommend two attractions that are well worth visiting during your stay.
+
+The city park is an ideal place to relax and experience the local way of life. You may see elderly residents fishing by the lake or dancing in the evening, and you might even come across a traditional opera performance. The local museum is also worth visiting, as it displays a collection of ancient tools and features interactive exhibits that bring local history to life.
+
+I hope these places will give you a deeper appreciation of our city. Please feel free to contact me if you need any further information.
+
+Yours sincerely,
+
+Li Ming
+\end{essaybody}
+
+\expressions{
+\exprow{be well worth visiting}{非常值得参观。}
+\exprow{experience the local way of life}{体验当地的生活方式。}
+\exprow{come across...}{偶然遇见／看到……。}
+\exprow{feature interactive exhibits}{设有互动展览。}
+\exprow{bring local history to life}{让当地历史变得鲜活。}
+\exprow{give sb. a deeper appreciation of...}{使某人更深入地领略／了解……。}
+}
+
+\newpage
+% -------------------- 2020 --------------------
+\thispagestyle{fancy}
+\pageheading{2020 年考研英语（一）小作文}
+\sectionlabel{考试题目（Directions）}
+\begin{promptbox}
+The Students' Union of your university has assigned you to inform the international students about an upcoming singing contest. Write a notice in about 100 words.
+
+Write your answer on the ANSWER SHEET.
+
+Do not use your own name in the notice. (10 points)
+\end{promptbox}
+
+\sectionlabel{润色范文}
+\begin{essaybody}
+\begin{center}
+\textbf{Notice}
+\end{center}
+\begin{flushright}
+December 21
+\end{flushright}
+To all international students,
+
+The Students' Union is pleased to announce that a singing contest will be held in the school hall on December 28. The event aims to enrich campus life and provide an opportunity for students to share their love of music.
+
+Whether you are an experienced singer or simply a music lover, you are welcome to participate. Three experts from the National Music University will serve as judges and offer professional feedback. The top ten contestants will have the opportunity to receive further guidance, and small gifts will be presented to audience members.
+
+To register, please send your application to SingingContest@studentunion.edu.cn. We look forward to your participation.
+\noticeissuer{Students' Union}
+\end{essaybody}
+
+\expressions{
+\exprow{be pleased to announce that...}{很高兴地宣布……。}
+\exprow{be held in...}{在……举行。}
+\exprow{share one's love of...}{分享对……的热爱。}
+\exprow{serve as judges}{担任评委。}
+\exprow{offer professional feedback}{提供专业反馈。}
+\exprow{receive further guidance}{获得进一步指导。}
+}
+
+\newpage
+% -------------------- 2025 --------------------
+\thispagestyle{fancy}
+\pageheading{2025 年考研英语（一）小作文}
+\sectionlabel{考试题目（Directions）}
+\begin{promptbox}
+Read the following email from your classmate Paul and write him a reply.
+
+Dear Li Ming,
+
+I was really excited to hear that you'd invite some young craftsmen to demonstrate their innovative craft-making on campus. May I know more about what they'll show? Also, I'd like to help with your preparation work. Please let me know what I can do.
+
+Yours,
+
+Paul
+
+You should write about 100 words on the ANSWER SHEET.
+
+Do not use your own name in the email; use "Li Ming" instead. (10 points)
+\end{promptbox}
+
+\sectionlabel{润色范文}
+\begin{essaybody}
+Dear Paul,
+
+Thank you for your email. I am glad to hear that you are interested in the craft demonstration and willing to help with the preparations.
+
+The young craftsmen will showcase traditional Chinese wood carvings. They will demonstrate how a plain block of wood can be carefully shaped into a lifelike animal sculpture, explaining each step of the process. You will also have the opportunity to try your hand at this traditional craft.
+
+As for the preparations, could you help us decorate the stage and arrange the display area before the event? Your help would be greatly appreciated. I look forward to seeing you there.
+
+Yours sincerely,
+
+Li Ming
+\end{essaybody}
+
+\expressions{
+\exprow{be interested in...}{对……感兴趣。}
+\exprow{showcase traditional Chinese wood carvings}{展示中国传统木雕。}
+\exprow{be shaped into...}{被塑造成……。}
+\exprow{explain each step of the process}{解释／展示制作过程中的每个步骤。}
+\exprow{try one's hand at...}{亲自尝试……。}
+\exprow{Your help would be greatly appreciated.}{如能得到你的帮助，我们将不胜感激。}
+}
+
+\end{document}
