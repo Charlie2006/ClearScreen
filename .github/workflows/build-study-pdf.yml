@@ -1,0 +1,41 @@
+name: Build study PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'study-materials/*.tex'
+      - '.github/workflows/build-study-pdf.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install XeLaTeX and fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-xetex texlive-lang-chinese texlive-latex-extra fonts-noto-cjk fonts-croscore
+
+      - name: Compile PDF
+        run: |
+          cd study-materials
+          xelatex -interaction=nonstopmode -halt-on-error '考研英语一小作文_真题范文与表达总结.tex'
+          xelatex -interaction=nonstopmode -halt-on-error '考研英语一小作文_真题范文与表达总结.tex'
+
+      - name: Commit compiled PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'study-materials/考研英语一小作文_真题范文与表达总结.pdf'
+          if git diff --cached --quiet; then
+            echo "PDF is already up to date."
+            exit 0
+          fi
+          git commit -m "Add compiled exam writing PDF"
+          git push origin HEAD:main
